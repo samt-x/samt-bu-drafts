@@ -1,3 +1,3 @@
-module github.com/SAMT-BU/samt-bu-drafts
+module github.com/SAMT-X/samt-bu-drafts
 
 go 1.25.6
