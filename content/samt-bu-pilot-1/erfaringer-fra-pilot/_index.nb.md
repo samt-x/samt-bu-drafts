@@ -4,7 +4,7 @@ title: Erfaringer fra pilot
 linkTitle: Erfaringer fra pilot
 weight: 10
 ---
-Erfaringer fra 1. pilot (Versjon 0.1 – 23.02.2026). Danner grunnlag for løpende oppdatering av håndboken for gjennomføring av piloter...
+Erfaringer fra 1. pilot (Versjon 0.1 – 23.02.2026). Danner grunnlag for løpende oppdatering av håndboken for gjennomføring av piloter.
 
 ## Innledning
 
