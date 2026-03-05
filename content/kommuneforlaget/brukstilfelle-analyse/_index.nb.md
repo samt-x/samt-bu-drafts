@@ -1,4 +1,5 @@
 ---
+id: df6ebc64-e1d4-4fd7-a190-9f077eb085d2
 title: "KFs analyse av brukstilfellene 1–19 i Digdirs Felles løft / SAMT-BU"
 linkTitle: "Brukstilfelle-analyse"
 weight: 10
