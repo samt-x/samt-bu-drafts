@@ -1,4 +1,5 @@
 ---
+id: adc7381e-1309-4442-9cbb-a62058305c17
 title: "Joint project on vilbli.no and utdanning.no/karriereveiledning.no"
 linkTitle: "Joint project vilbli.no/utdanning.no"
 weight: 10
