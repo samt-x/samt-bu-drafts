@@ -24,4 +24,4 @@ Tabell er ok ut:
 
 ## Kap. 2
 
-![](bilde-1773241554924.png)![](bilde-1773241519370.png)![](bilde-1773237667458.png)
+sdfdsf
