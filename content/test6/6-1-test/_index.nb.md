@@ -4,3 +4,6 @@ title: 6.1 Test
 linkTitle: 6.1 test
 weight: 10
 ---
+Hei! Slik finner du fram:
+
+![](bilde-1773264855844.png)
