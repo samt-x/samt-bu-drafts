@@ -13,12 +13,20 @@ Ddasd
 3.  Adssad
 4.  dsds
 
-  
-
 Ingen tabell
 
   
 
 ## Kap. 2
+
+  
+
+  
+
+  
+
+![](bilde-1773241554924.png)
+
+![](bilde-1773241519370.png)
 
 ![](bilde-1773237667458.png)
