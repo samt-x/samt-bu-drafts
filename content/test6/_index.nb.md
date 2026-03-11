@@ -6,31 +6,22 @@ weight: 36
 ---
 ## Kap. 1
 
-Ddasd
+**Ddasd**
 
-1.  **Dasdsa**
-2.  **adssd**
-3.  Adssad
-4.  dsds
+- Dasdsa
+- adssd
+- Adssad
+- dsds
 
-Ingen tabell
+Tabell er ok ut:
 
-| Kolonne 1 | Kolonne 2 | Kolonne 3 |
+| A | B | C | D |
+| --- | --- | --- | --- |
+| 1 | 2 |  | 3 |
+| 4 | 5 |  | 6 |
 
-| --- | --- | --- |
-
-|1 | 2 | 3 |
-
-| 4 | 5 | 6 |
-
-  
-
-  
+<https://www.vg.no/>
 
 ## Kap. 2
 
-![](bilde-1773241554924.png)
-
-![](bilde-1773241519370.png)
-
-![](bilde-1773237667458.png)
+![](bilde-1773241554924.png)![](bilde-1773241519370.png)![](bilde-1773237667458.png)
