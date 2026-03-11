@@ -25,3 +25,5 @@ Tabell er ok ut:
 ## Kap. 2
 
 sdfdsf
+
+![](bilde-1773246356183.png)
