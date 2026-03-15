@@ -4,7 +4,7 @@ title: Novari og HK-dir
 linkTitle: Novari og HK-dir
 weight: 30
 toc: true
-last_editor: erikhag1git (Erik Hagen)
+last_editor: erikhag1git (ukjent navn)
 
 ---
 
