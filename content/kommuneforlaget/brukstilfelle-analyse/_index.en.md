@@ -3,6 +3,8 @@ id: df6ebc64-e1d4-4fd7-a190-9f077eb085d2
 title: "KF's analysis of use cases 1–19 (Digdir Felles løft / SAMT-BU)"
 linkTitle: "Use case analysis"
 weight: 10
+last_editor: Erik Hagen
+
 ---
 
 > **Note:** This document is currently only available in Norwegian.

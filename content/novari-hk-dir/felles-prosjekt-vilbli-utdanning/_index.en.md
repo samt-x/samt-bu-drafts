@@ -3,6 +3,8 @@ id: adc7381e-1309-4442-9cbb-a62058305c17
 title: "Joint project on vilbli.no and utdanning.no/karriereveiledning.no"
 linkTitle: "Joint project vilbli.no/utdanning.no"
 weight: 10
+last_editor: Erik Hagen
+
 ---
 
 Novari and HK-dir have, in dialogue with the SAMT-BU project, highlighted opportunities related to a potential merger of the services at vilbli.no and utdanning.no/karriereveiledning.no. A high-level project proposal outlining potential benefits has been prepared (see link below).
