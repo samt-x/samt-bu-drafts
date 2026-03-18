@@ -4,6 +4,7 @@ title: "Joint project on vilbli.no and utdanning.no/karriereveiledning.no"
 linkTitle: "Joint project vilbli.no/utdanning.no"
 weight: 10
 last_editor: erikhag1git (Erik Hagen)
+lastmod: 2026-03-15T23:49:27+01:00
 
 ---
 

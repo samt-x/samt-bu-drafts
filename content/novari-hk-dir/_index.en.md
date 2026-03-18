@@ -4,6 +4,7 @@ title: "Novari and HK-dir"
 linkTitle: "Novari and HK-dir"
 weight: 30
 last_editor: erikhag1git (Erik Hagen)
+lastmod: 2026-03-15T23:49:27+01:00
 
 ---
 

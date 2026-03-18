@@ -4,6 +4,7 @@ title: "SAMT-BU Pilot 1"
 linkTitle: "SAMT-BU Pilot 1"
 weight: 20
 last_editor: erikhag1git (Erik Hagen)
+lastmod: 2026-03-15T23:49:27+01:00
 
 ---
 
