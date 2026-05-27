@@ -4,7 +4,7 @@ id: 13e2da34-ee0e-42be-b2c3-3c98d7147ab9
 title: "Kommuneforlaget (KF)"
 linkTitle: "Kommuneforlaget"
 weight: 30
-lastmod: 2026-04-19T16:20:20+02:00
+lastmod: 2026-05-27T21:35:24+02:00
 last_editor: Erik Hagen
 
 ---
