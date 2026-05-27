@@ -3,7 +3,7 @@
 id: 08cae4d9-221a-4182-abe9-b73e0970e639
 title: Novari og HK-dir
 linkTitle: Novari og HK-dir
-weight: 50
+weight: 60
 toc: true
 lastmod: 2026-04-19T16:25:48+02:00
 last_editor: Erik Hagen
