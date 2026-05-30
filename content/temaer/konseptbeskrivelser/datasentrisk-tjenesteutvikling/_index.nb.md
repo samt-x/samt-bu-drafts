@@ -21,7 +21,7 @@ Bakgrunnen er lett å formulere og vanskelig å løse: sammenhengende tjenester 
 
 Konseptet hviler på tre ben: *datasentrisk* som arkitekturvalg (data, ikke applikasjoner, er det stabile), *dataproduktorientering* som organisering (data leveres som produkter med tydelig forvaltningsansvar, kontrakter og semantisk annotasjon), og en *virtuell kunnskapsgraf* som realisering (data forblir hos sine autoritative kilder, og en lagdelt ontologi binder dem sammen gjennom mapping). Den avgjørende egenskapen er at grafen vokser monotont: nye begreper kan legges til uten å bryte det som allerede virker. Det er denne egenskapen som gjør at verdi kan hentes gradvis, pilot for pilot, uten å vente på en ferdig modell.
 
-Konseptet er forankret i internasjonale rammeverk – særlig EUs operative interoperabilitetsmekanismer (MIMs Plus) og SEMICs Core Vocabularies – slik at norsk offentlig sektor kan kobles på det europeiske økosystemet av delte begreper framfor å bygge en særvariant.
+Konseptet er forankret i internasjonale rammeverk – særlig EUs operative interoperabilitetsmekanismer ([MIMs Plus](#mims-plus)) og [SEMICs Core Vocabularies](#semic-core-vocabularies) – slik at norsk offentlig sektor kan kobles på det europeiske økosystemet av delte begreper framfor å bygge en særvariant.
 
 Like viktig er hva konseptet *ikke* gjør. Det sentraliserer ikke data, det bytter ikke ut eksisterende fagsystemer, og det velger ikke teknologi, produkter eller leverandører – slike valg hører til målbildearkitekturen og arkitekturgruppas videre arbeid. Konseptbeskrivelsen forplikter retningen, ikke beslutningene under.
 
@@ -109,7 +109,7 @@ Vi har vurdert syv konsepter, fra de mest tradisjonelle til de mest ambisiøse:
 
 **E. Data mesh uten kunnskapsgraf.** Dataprodukter med eierskap, kontrakter og federert governance løser mye organisatorisk. Men data mesh i sin opprinnelige form adresserer ikke den semantiske fragmenteringen mellom domener. Konsumenter må fortsatt normalisere semantikken selv ved hver kobling.
 
-**F. Datasentrisk på relasjonsmodeller.** McComb argumenterer i *The Data-Centric Revolution* (kap. 8–9) for at datasentrisk arkitektur i prinsippet er mulig også med tradisjonelle relasjonsmodeller. Det er fagteknisk riktig. Men kompleksiteten vokser eksponentielt med antall virksomheter, begreper og endringstempo. Den monotone utvidelses-egenskapen som linked data gir, er vanskelig å oppnå når skjemaer er strikte. På norsk offentlig-sektor-skala blir denne varianten teoretisk farbar, men praktisk forsinkende.
+**F. Datasentrisk på relasjonsmodeller.** [McComb](#mccomb-2019) argumenterer i [*The Data-Centric Revolution*](#mccomb-2019) (kap. 8–9) for at datasentrisk arkitektur i prinsippet er mulig også med tradisjonelle relasjonsmodeller. Det er fagteknisk riktig. Men kompleksiteten vokser eksponentielt med antall virksomheter, begreper og endringstempo. Den monotone utvidelses-egenskapen som linked data gir, er vanskelig å oppnå når skjemaer er strikte. På norsk offentlig-sektor-skala blir denne varianten teoretisk farbar, men praktisk forsinkende.
 
 **G. Datasentrisk med virtuell kunnskapsgraf.** Datasentrisk paradigme realisert gjennom en virtuell, lagdelt ontologi som refererer dataene der de eies. Dataprodukter eksponerer data med semantiske koblinger til ontologien. Dette er konseptet vi anbefaler.
 
@@ -137,7 +137,7 @@ Dette skal ikke leses som at relasjonsmodeller er dårlige, at API-er er overfl�
 
 Det er viktig å være eksplisitt på hva dette valget innebærer og ikke. Vi har valgt et **paradigme** (datasentrisk tjenesteutvikling) og et **arkitektonisk mønster** (virtuell kunnskapsgraf med føderert lagdelt ontologi og dataprodukteierskap). Vi har **ikke** valgt:
 
-- Konkrete teknologier (f.eks. RDF vs. property graph, SPARQL vs. Cypher, valg av triplestore)
+- Konkrete teknologier (f.eks. [RDF](#rdf-og-sparql) vs. property graph, [SPARQL](#rdf-og-sparql) vs. Cypher, valg av triplestore)
 - Konkrete verktøy for ontologimodellering og governance
 - Konkret infrastruktur (sky vs. on-prem, hvilke fellesløsninger som utvides)
 - Konkrete leverandører
@@ -156,7 +156,7 @@ Seksjonen er den mest tekniske i denne konseptbeskrivelsen. Den er likevel skrev
 
 En **kunnskapsgraf** er en graf der noder representerer begreper og entiteter, og kanter representerer relasjonene mellom dem. Når kunnskapsgrafen bygger på en eksplisitt **ontologi** – en formell modell av begrepene og hvordan de henger sammen – blir relasjonene maskinlesbart typede. Begrepene har en definert mening både mennesker og programmer kan resonnere over.
 
-Gioia beskriver tre arkitektoniske varianter av kunnskapsgraf (*Managing Data as a Product*, kap. 11):
+[Gioia](#gioia-2024) beskriver tre arkitektoniske varianter av kunnskapsgraf ([*Managing Data as a Product*](#gioia-2024), kap. 11):
 
 1. **Datasentrisk (materialisert) kunnskapsgraf.** Data lever inni grafen. Applikasjoner skriver og leser direkte mot grafen. McCombs ideale tilstand.
 2. **Knowledge warehouse (materialisert).** Data kopieres fra kildesystemene inn i grafen for lesetilgang. Eierskap forblir hos kildene.
@@ -180,7 +180,7 @@ Gioia anbefaler selv denne arkitekturen som realistisk startpunkt for moderne or
 Den lagdelte tilnærmingen organiserer dette i fire lag:
 
 **Øvre ontologi (upper ontology).**
-Universelle begreper som overskrider domener: objekt, hendelse, tid, sted, agent, rolle. Etablerte standarder finnes (BFO – Basic Formal Ontology, GIST). Et offentlig norsk konsept skal kunne uttrykkes som en spesialisering av disse abstrakte byggesteinene.
+Universelle begreper som overskrider domener: objekt, hendelse, tid, sted, agent, rolle. Etablerte standarder finnes ([BFO](#bfo) – Basic Formal Ontology, [GIST](#gist)). Et offentlig norsk konsept skal kunne uttrykkes som en spesialisering av disse abstrakte byggesteinene.
 
 **Domeneontologi.**
 Begreper som er felles for "offentlig forvaltning i Norge": person (med adresse, identifikator, statsborgerskap), virksomhet, tjeneste, vedtak, hendelse, samtykke, fullmakt, beslutning. Dette er kjernemodellen, og det er her det meste av det semantiske arbeidet skjer for prosjektets ambisjon om sammenhengende tjenester. SEMICs Core Vocabularies (Core Person, Core Public Service, Core Organization, Core Location, CCCEV) gir en EU-koblet startpakke for dette laget – ikke som krav vi underkaster oss, men som naturlige forankringspunkter som sparer arbeid og garanterer cross-border-kompatibilitet.
@@ -203,7 +203,7 @@ Begrepene er forskjellige – med rette, for de tjener forskjellige formål – 
 
 Lagene har forskjellige eiere. Domeneontologien må eies sentralt – det er hele poenget at den er felles. Underdomeneontologiene eies av de respektive sektorene; applikasjonsontologiene av tjenesteansvarlige eller piloter.
 
-Gioia kaller den sentrale modelleringsorganisasjonen et **føderert modelleringsteam**: representanter fra hver involvert sektor, med mandat til å forhandle om og forvalte de felles begrepene. For SAMT-BU vil dette være et fellesorgan med utsendinger fra Digdir, KS Digital, Udir, Sikt, HK-dir, STAF og SSB. Sammensetningen og styringen tilhører ikke konseptbeskrivelsen; men det er denne typen mekanisme som må etableres for at konseptet skal fungere i praksis.
+Gioia kaller den sentrale modelleringsorganisasjonen et **føderert modelleringsteam**: representanter fra hver involvert sektor, med mandat til å forhandle om og forvalte de felles begrepene. For SAMT-BU vil dette være et fellesorgan med utsendinger fra [Digdir](#digdir), KS Digital, Udir, Sikt, HK-dir, STAF og SSB. Sammensetningen og styringen tilhører ikke konseptbeskrivelsen; men det er denne typen mekanisme som må etableres for at konseptet skal fungere i praksis.
 
 ### 4.3 Autoritative kilder, dataprodukter og applikasjoner
 
@@ -224,7 +224,7 @@ De tre relasjonene kan opptre samtidig på samme data, men de er forskjellige re
 
 #### 4.3.2 Dagens fragmenterte situasjon
 
-Norsk offentlig sektor har gjennom en applikasjonssentrisk utviklingshistorie endt med et stort antall fagsystemer som hver fungerer som *de facto* eier av "sine" data – med sine egne datamodeller, sine egne identifikatorer og sine egne tolkninger av delte begreper. Dette er ikke en uskyldig fragmentering. Det er det McComb diagnostiserer som det applikasjonssentriske kvagmyret (*Software Wasteland*, kap. 3): hver applikasjon skaper sin egen virkelighet av data, integrasjoner mellom dem multipliserer (N²), og fellesbegreper smelter sammen til lokale varianter som ikke lar seg sammenstille.
+Norsk offentlig sektor har gjennom en applikasjonssentrisk utviklingshistorie endt med et stort antall fagsystemer som hver fungerer som *de facto* eier av "sine" data – med sine egne datamodeller, sine egne identifikatorer og sine egne tolkninger av delte begreper. Dette er ikke en uskyldig fragmentering. Det er det McComb diagnostiserer som det applikasjonssentriske kvagmyret ([*Software Wasteland*](#mccomb-2018), kap. 3): hver applikasjon skaper sin egen virkelighet av data, integrasjoner mellom dem multipliserer (N²), og fellesbegreper smelter sammen til lokale varianter som ikke lar seg sammenstille.
 
 Tilnærmingen om å "samle metadata i en felles datakatalog og konsolidere over tid" har vist seg vanskelig å realisere i praksis, fordi konsolideringsarbeidet konkurrerer med løpende prioriteringer hos hver dataeier. Resultatet er at katalogen vokser med beskrivelser av overlappende og inkonsistente datasett uten at selve fragmenteringen reduseres.
 
@@ -246,7 +246,7 @@ Disse skal forbli autoritative. Ny autoritet for andre begreper skal etableres p
 
 De autoritative kildene tilbyr seg som **dataprodukter** med egenskapene Gioia beskriver: tydelig dataproduktansvar (i tredje forstand av "eierskap"), eksplisitte kontrakter, selvbeskrivende metadata, og semantisk annotering som binder feltene til ontologien. Den siste – semantisk annotering, for eksempel gjennom Data Product Descriptor Specification (DPDS) med "s-context"-annotasjoner – er det som lenker det enkelte dataproduktet til den lagdelte ontologien beskrevet i 4.2. Et felt som *fødselsdato* i Folkeregisterets persondata kan annoteres som instans av *birthDate* i Core Person Vocabulary, som igjen er spesialisering av en tidsangivelse i øvre ontologi.
 
-Den tekniske mapping-mekanismen mellom relasjonsdatabaser eller andre datakilder og den semantiske representasjonen kan formaliseres ved hjelp av etablerte standarder: **R2RML** for relasjonsdata, **RML** for semi-strukturert data (JSON, XML, CSV). Dette er praktiske verktøy som arkitekturgruppa kan bygge på, ikke konsernstrategiske valg.
+Den tekniske mapping-mekanismen mellom relasjonsdatabaser eller andre datakilder og den semantiske representasjonen kan formaliseres ved hjelp av etablerte standarder: **[R2RML](#r2rml-og-rml)** for relasjonsdata, **[RML](#r2rml-og-rml)** for semi-strukturert data (JSON, XML, CSV). Dette er praktiske verktøy som arkitekturgruppa kan bygge på, ikke konsernstrategiske valg.
 
 Det er viktig å understreke: de autoritative kildene fortsetter å bruke sine eksisterende teknologier – relasjonsdatabaser, REST-API-er, hendelseskøer. Det er den **semantiske påklisteringen** (annotasjoner, mapping) som er ny, ikke selve datalageret.
 
@@ -343,10 +343,10 @@ Mellomlaget i søknaden var en velvalgt plassholder for noe det ikke fantes en e
 I søknadens språk er "felles informasjonsmodeller" en samlebetegnelse for delte representasjoner av begreper. I konseptet her er det realisert som en lagdelt ontologi (øvre, domene, underdomene, applikasjon) som lar både fellestrekk og sektorspesifikke utvidelser være eksplisitte. SEMICs Core Vocabularies gir EU-kompatible startpakker for domenelaget. Den lagdelte strukturen er den arkitektoniske egenskapen som lar modellene utvides monotont uten å bryte eksisterende bruk – noe en flat informasjonsmodell ikke gir.
 
 **"Felles tjenestekatalog" → tjeneste-ontologi og dataproduktkontrakter.**
-I søknaden er tjenestekatalogen tenkt som en oversikt over offentlige tjenester. I konseptet får tjenester sin semantiske representasjon i ontologien (på domene- og applikasjonslag, naturlig basert på CPSV-AP), mens de operative kontraktene knyttet til hver tjeneste og hvert dataprodukt får sin egen formalisering (DPDS, ODRL for bruksvilkår). Katalogen blir altså en sammensetning av semantiske beskrivelser og kontraktsbeskrivelser, ikke en flat liste.
+I søknaden er tjenestekatalogen tenkt som en oversikt over offentlige tjenester. I konseptet får tjenester sin semantiske representasjon i ontologien (på domene- og applikasjonslag, naturlig basert på CPSV-AP), mens de operative kontraktene knyttet til hver tjeneste og hvert dataprodukt får sin egen formalisering ([DPDS](#dpds), ODRL for bruksvilkår). Katalogen blir altså en sammensetning av semantiske beskrivelser og kontraktsbeskrivelser, ikke en flat liste.
 
 **"Felles begreps- og metadatakataloger" → forvaltningsstruktur i og rundt kunnskapsgrafen.**
-Begrepskatalogen er i praksis et menneskelig grensesnitt mot domeneontologien. Metadatakataloger som DCAT-AP-NO beskriver dataprodukter på et nivå konsumenter trenger for å finne fram. I konseptet er disse koblet til kunnskapsgrafen og ikke separate løsninger – noe som også løser problemet beskrevet i 4.3.2 om at en katalog uten en strukturell konsolideringsmekanisme har vist seg vanskelig å holde konsistent.
+Begrepskatalogen er i praksis et menneskelig grensesnitt mot domeneontologien. Metadatakataloger som [DCAT-AP-NO](#dcat-ap-no) beskriver dataprodukter på et nivå konsumenter trenger for å finne fram. I konseptet er disse koblet til kunnskapsgrafen og ikke separate løsninger – noe som også løser problemet beskrevet i 4.3.2 om at en katalog uten en strukturell konsolideringsmekanisme har vist seg vanskelig å holde konsistent.
 
 **"Datavirtualisering" → den virtuelle kunnskapsgrafen.**
 Dette er en direkte oversettelse: søknadens datavirtualisering er nettopp den *virtuelle* varianten i Gioias tre-arkitekturer-typologi (4.1). Den semantiske rikheten kunnskapsgrafen tilfører, er en presisering av hva virtualisering må innebære når den skal være meningsfull på tvers av sektorer – ikke bare adgang til data uten kopiering, men adgang med felles mening.
@@ -637,3 +637,71 @@ For det første rammer den i hovedsak *ambisjonsnivå og tempo*, ikke retning. I
 For det andre følger det at konseptvalget ikke bør selges som teknisk uunngåelig. Det er det best dokumenterte valget *gitt ambisjonen* – ikke en logisk nødvendighet. Senkes ambisjonen, åpner alternative veier seg. Det er en ærligere og mer holdbar posisjon enn å hevde at det ikke finnes andre veier, og det er grunnen til at konseptbeskrivelsen gjennomgående har valgt formuleringer som «den mest robuste tilnærmingen vi kjenner» framfor «den eneste farbare vei».
 
 Den praktiske konsekvensen av å ta innvendingen på alvor er den gradvise tilnærmingen konseptet allerede forplikter (4.5): vi bygger semantisk modenhet der ambisjonen krever det og verdien er størst, ikke overalt på én gang. Det er nettopp slik man unngår katedralen uten å gi opp sammenhengen.
+
+---
+
+## 9. Kildehenvisninger
+
+Dette dokumentet bygger på et lite knippe kilder. Litteraturen forklarer paradigmet og den arkitektoniske strukturen konseptet hviler på; standardene og rammeverkene er de operative referansene konseptet forankres i. Henvisninger i den løpende teksten peker hit.
+
+### Litteratur
+
+#### McComb (2018)
+
+Dave McComb: *Software Wasteland: How the Application-Centric Mindset is Hobbling our Enterprises.* Technics Publications, 2018. Argumentet for at det applikasjonssentriske tankesettet i seg selv er en hovedkilde til kostnad og kompleksitet i virksomheters informasjonssystemer.
+
+#### McComb (2019)
+
+Dave McComb: *The Data-Centric Revolution: Restoring Sanity to Enterprise Information Systems.* Technics Publications, 2019. Den sentrale framstillingen av det datasentriske paradigmet – «single but federated», forholdet til relasjonsmodellen, og kunnskapsgrafen som arkitektonisk grunnmur.
+
+#### Gioia (2024)
+
+Andrea Gioia: *Managing Data as a Product: A practical guide to enterprise data management.* Packt Publishing, november 2024. ISBN 978-1-83546-853-1. Kilde til dataproduktorienteringen, den lagdelte ontologien, de tre kunnskapsgraf-arkitekturene og det firedelte informasjonsarkitektur-planet (kapittel 11).
+
+### Standarder og rammeverk
+
+#### MIMs Plus
+
+Minimal Interoperability Mechanisms Plus – Living-in.EU / OASC. EUs operative interoperabilitetsmekanismer, revidert årlig. <https://living-in.eu/>
+
+#### SEMIC Core Vocabularies
+
+Forenklede, gjenbrukbare kjernemodeller for blant annet person, virksomhet og lokasjon – Interoperable Europe (EU-kommisjonen). <https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/core-vocabularies>
+
+#### DCAT-AP-NO
+
+Den norske applikasjonsprofilen av DCAT-AP for beskrivelse av datasett og datatjenester – Digdir. <https://data.norge.no/specification/dcat-ap-no>
+
+#### DPDS
+
+Data Product Descriptor Specification – Open Data Mesh Initiative. Standardisert beskrivelse av dataprodukter, inkludert semantiske koblinger mot ontologien. <https://dpds.opendatamesh.org/>
+
+#### R2RML og RML
+
+Standardspråk for å mappe henholdsvis relasjonsdata og semistrukturerte data til RDF – W3C. <https://www.w3.org/TR/r2rml/> · <https://rml.io/>
+
+#### RDF og SPARQL
+
+Grunnstandardene for å representere og spørre mot grafdata – W3C. <https://www.w3.org/TR/rdf11-concepts/> · <https://www.w3.org/TR/sparql11-query/>
+
+#### GIST
+
+Pragmatisk øvre ontologi utviklet for virksomheter – Semantic Arts. <https://www.semanticarts.com/gist/>
+
+#### BFO
+
+Basic Formal Ontology, en formell øvre ontologi – ISO/IEC 21838-2:2021. <https://basic-formal-ontology.org/>
+
+#### Digdir
+
+Rammeverk for digital samhandling og definisjonen av semantisk samhandlingsevne – Digitaliseringsdirektoratet. <https://www.digdir.no/>
+
+### Regelverk
+
+#### EUs KI-forordning (AI Act)
+
+Forordning (EU) 2024/1689. Forpliktelsene for høyrisiko-KI etter Annex III ble gjennom Digital Omnibus-enigheten i mai 2026 utsatt til desember 2027. <https://eur-lex.europa.eu/eli/reg/2024/1689/oj> · <https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai>
+
+#### EUDI Wallet
+
+Den europeiske digitale lommeboken under eIDAS 2 (forordning (EU) 2024/1183). For EØS-land inkludert Norge gjelder en frist mot slutten av 2027. <https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet-implementation>
