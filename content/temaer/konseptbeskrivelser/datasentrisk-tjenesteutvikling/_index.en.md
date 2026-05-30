@@ -1,4 +1,5 @@
 ---
+id: 39286298-056f-4d68-9fe0-cdea507f59cb
 # id: auto-generated – copied values are overwritten automatically on push
 title: "Data-centric service development"
 linkTitle: "Data-centric service development"

@@ -1,4 +1,5 @@
 ---
+id: 39286298-056f-4d68-9fe0-cdea507f59cb
 # id: auto-generert – kopierte verdier overskrives automatisk ved push
 title: "Datasentrisk tjenesteutvikling"
 linkTitle: "Datasentrisk tjenesteutvikling"
