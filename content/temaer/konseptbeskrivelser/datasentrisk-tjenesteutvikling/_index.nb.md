@@ -306,6 +306,14 @@ Det er denne kombinasjonen – semantisk grunnlag med monoton vekst, dataprodukt
 
 Hvordan dette står i forhold til prosjektets eksisterende rammeverk – og særlig til "mellomlaget" og "felles informasjonsmodeller" som søknaden bruker – behandles i seksjon 5.
 
+### 4.6 Datasentrisk tilgangsstyring
+
+Tilgangsstyring følger samme logikk som resten av arkitekturen: det stabile er dataene, ikke tjenestene som eksponerer dem. Et applikasjonssentrisk landskap spør «har bruker X lov til å kalle tjeneste Y?». En datasentrisk arkitektur spør «har bruker X lov til å se disse dataene, uavhengig av hvilken tjeneste som eksponerer dem?». Distinksjonen er ikke akademisk i SAMT-BUs domene, der sensitive opplysninger om barn og unge flyter på tvers av barnehage, skole, kommune og stat: det er dataene og innholdet deres som er regulert, mens API-ene er utskiftbare projeksjoner. Tilgangsregler knyttet til tjenesten må bygges på nytt for hver nye tjeneste og passer dårlig med den virtuelle kunnskapsgrafens logikk.
+
+Konsekvensen for konseptet er ett prinsipp: rettigheter knyttes til data, ikke til API-er. Det er meningsfullt å uttrykke en rettighet mot en abstrakt, persistent identifisert ressurs – et datasett – uavhengig av om det eksponeres via REST, et SPARQL-endepunkt eller filnedlasting. En regel kan da si at «saksbehandlere i barnevernstjenesten kan bruke opplysninger fra [datasett] til formål [Y] i periode [X]», og forbli gyldig når den tekniske distribusjonen skiftes ut. Dette knytter an til de tre betydningene av «eierskap» i 4.3.1: tilgangsstyringen håndhever den juridiske og forvaltningsmessige kontrollen over dataene, ikke et teknisk endepunkt. [ODRL](#odrl) er standarden som er bygget for å uttrykke slike rettigheter mot datasett.
+
+Hvordan dette håndheves maskinelt – forholdet mellom policy-uttrykk og håndhevingsarkitektur, og hva dagens nasjonale infrastruktur støtter – er et målbilde- og arkitekturspørsmål, ikke et konseptvalg. Det behandles som åpent spørsmål i 8.2.
+
 ---
 
 ## 5. Sammenheng med konsept skissert i søknaden
@@ -591,8 +599,12 @@ Følgende er reelle åpne spørsmål som konseptbeskrivelsen med overlegg lar st
 - **Identifikatorstrategi.** Hvilke persistente, unike identifikatorer som skal binde entiteter sammen på tvers (MIM1), og hvordan de forholder seg til eksisterende nasjonale identifikatorer, er ikke avklart her.
 - **Forvaltning av mapping-laget.** Hvordan mappingene mellom datakilder og ontologi (R2RML/RML) skal versjoneres, testes og eies operativt, er en målbilde- og driftssak.
 - **Materialiseringsgrad over tid.** Konseptet starter virtuelt. Når og om enkelte deler bør materialiseres – referert data kan materialiseres senere, men ikke omvendt (4.1) – er et veikartspørsmål, ikke et konseptvalg.
+- **Håndheving av tilgangsstyring.** Rettigheter uttrykt mot datasett ([ODRL](#odrl)) må kunne håndheves maskinelt mot konkrete forespørsler, typisk ved å mappes til et håndhevingsrammeverk ([XACML](#xacml) med PEP/PDP). Valg av profil og arkitektur er en målbildesak.
+- **Nasjonal tilgangsinfrastruktur.** [Altinn Autorisasjon](#altinn-autorisasjon)s ressursregister er i dag orientert mot tjenester og API-er, ikke mot datasett: det finnes ingen ressurstype for datasett, og ID-formatet tillater ikke IRIer. Arkitekturen er ressursbasert og utvidbar, så dette er ikke et prinsipielt hinder – men det er et nasjonalt infrastruktur-gap som må adresseres for at datasentrisk tilgangsstyring skal kunne realiseres i praksis.
 
 Til dette hører også **nåsituasjon og posisjonering mot etablerte forløpere**. En grundig kartlegging av eksisterende fagsystemer, dataforvaltning og samhandlingsmønstre i de berørte sektorene – og en presis vurdering av hvordan SAMT-BU forholder seg til arbeider som FINT, KUDAF og FIKS-plattformen – er en del av arkitekturgruppas eget arbeid, ikke denne konseptbeskrivelsens. Det vi har sagt om forløperne, er holdt til det nødvendige: FINT er vurdert som alternativ C i konseptvalget (seksjon 3), og koblingen til pågående nasjonalt arbeid er skissert i seksjon 6. Den fulle posisjoneringen krever en nåsituasjonsbeskrivelse som hører hjemme i arkitekturarbeidet.
+
+Ett tilgangsproblem er verken løst av konseptet eller av de etablerte europeiske rammeverkene, og bør flagges eksplisitt. Når et API kan returnere ulike data avhengig av kontekst – et SPARQL-endepunkt eller et spørringsbasert API over kunnskapsgrafen – er tilgangskontroll ikke lenger et spørsmål om å tillate eller avslå et kall, men om å filtrere svaret slik at konsumenten kun ser det hun har rett til. Gapet er dokumentert: [IDSAs Dataspace Protocol](#idsa-dataspace-protocol) og [DSSC Blueprint](#dssc-blueprint) definerer tilgang på datasett-nivå, men overlater håndheving til konnektoren; [SIMPLs](#simpl) Policy Filter Service filtrerer hvilke ressurser som returneres i et katalogsøk etter brukerens rettigheter, men adresserer ikke filtrering av innholdet i det enkelte datasett; og [Catena-X' Knowledge Agents (CX-0084)](#catena-x-knowledge-agents-cx-0084) åpner for rad- og attributtnivå-tilgang som en mulighet, ikke en spesifisert mekanisme. For SAMT-BU er dette ikke et kanttilfelle: domenet kombinerer opplysninger med svært ulik sensitivitet – helse, skoleresultater, sosiale forhold – som kan berøres av samme spørring. Inntil mønstre for slik filtrering er standardisert, må dataproduktet selv (eller bindingslaget i en kunnskapsgraf) bære logikken; den tryggeste tilnærmingen i dag er separate, forhåndsannoterte distribusjoner med egne policyer for ulik tilgangsgrad framfor dynamisk filtrering av ett endepunkt. Behovet bør meldes inn i de europeiske standardiserings- og fellesskapskanalene (DSSC, IDSA), der Digdir kan løfte det som et krav fra offentlig sektor.
 
 ### 8.3 Organisatoriske og styringsmessige åpne spørsmål
 
@@ -695,6 +707,34 @@ Basic Formal Ontology, en formell øvre ontologi – ISO/IEC 21838-2:2021. <http
 #### Digdir
 
 Rammeverk for digital samhandling og definisjonen av semantisk samhandlingsevne – Digitaliseringsdirektoratet. <https://www.digdir.no/>
+
+#### ODRL
+
+Open Digital Rights Language – W3C. Policy-språk for å uttrykke bruksvilkår og tilgangsrettigheter mot ressurser som datasett. <https://www.w3.org/TR/odrl-model/>
+
+#### XACML
+
+eXtensible Access Control Markup Language – OASIS. Rammeverk for å evaluere og håndheve tilgangspolicyer (PEP/PDP/PIP/PAP). <https://docs.oasis-open.org/xacml/3.0/xacml-3.0-core-spec-os-en.html>
+
+#### IDSA Dataspace Protocol
+
+Protokoll for datadeling mellom konnektorer i datarom – International Data Spaces Association. <https://kb.internationaldataspaces.org/>
+
+#### DSSC Blueprint
+
+Felles referansearkitektur for europeiske datarom – Data Spaces Support Centre. <https://blueprint.dssc.eu/>
+
+#### Catena-X Knowledge Agents (CX-0084)
+
+Standard for fødererte spørringer i datarom (compute-to-data over kunnskapsgraf) – Catena-X. <https://catenax-ev.github.io/docs/next/standards/CX-0084-FederatedQueriesInDataSpaces>
+
+#### SIMPL
+
+EUs mellomvareplattform for europeiske datarom – Europakommisjonen. Policy Filter Service beskrevet i Functional and Technical Architecture Specifications §9.2.5. <https://digital-strategy.ec.europa.eu/en/policies/simpl>
+
+#### Altinn Autorisasjon
+
+Nasjonal tilgangsstyrings- og ressursregister-infrastruktur – Digdir/Altinn. <https://docs.altinn.studio/authorization/>
 
 ### Regelverk
 
