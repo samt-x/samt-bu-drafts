@@ -427,6 +427,8 @@ Kravene vi formulerte i konseptvalg-seksjonen er ikke ad hoc, men gjenfinnes i M
 | 6. Felles begreper for brukerreiser | MIM1, MIM2 | Delte vokabularer som lar tjenester sammenstilles på tvers |
 | Tverrgående | MIM6 | Sikkerhet og autentisering for all dataaksess |
 
+<br>
+
 Mappingen viser at konseptvalget vårt ikke konkurrerer med MIMs Plus – det operasjonaliserer det. Når vi anbefaler "datasentrisk arkitektur med virtuell kunnskapsgraf og lagdelt ontologi", er det en konkretisering av hvordan MIMs 1 og 2 kan realiseres sammenhengende på norsk offentlig-sektor-skala.
 
 ### 6.4 Application-specific MIMs som er særlig relevante for SAMT-BU
