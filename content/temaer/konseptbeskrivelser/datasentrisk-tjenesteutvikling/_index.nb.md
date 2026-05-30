@@ -31,7 +31,7 @@ Dokumentet kan leses lineært eller oppslagsvis: konseptvalget med de vurderte a
 
 ## 2. Innledning
 
-Dette dokumentet er en konseptbeskrivelse for **datasentrisk tjenesteutvikling** i SAMT-BU. Det er et utkast, plassert under `/utkast/temaer/konseptbeskrivelser/`, og er ment som innspill til arkitekturgruppa i prosjektet. Det er ikke en fasit, og det erstatter ikke målbildearkitekturen eller den videre arkitekturdiskusjonen prosjektet skal gjennomføre. Det er et arbeidsdokument som forplikter retningen, slik at de neste skrittene kan tas på begrunnet grunnlag.
+Dette dokumentet er en konseptbeskrivelse for **datasentrisk tjenesteutvikling** i SAMT-BU. Det er et utkast, plassert under [Konseptbeskrivelser](../), og er ment som innspill til arkitekturgruppa i prosjektet. Det er ikke en fasit, og det erstatter ikke målbildearkitekturen eller den videre arkitekturdiskusjonen prosjektet skal gjennomføre. Det er et arbeidsdokument som forplikter retningen, slik at de neste skrittene kan tas på begrunnet grunnlag.
 
 ### Bakgrunn
 
