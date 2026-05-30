@@ -4,7 +4,7 @@ id: 39286298-056f-4d68-9fe0-cdea507f59cb
 title: "Datasentrisk tjenesteutvikling"
 linkTitle: "Datasentrisk tjenesteutvikling"
 weight: 10
-lastmod: 2026-05-31T00:50:27+02:00
+lastmod: 2026-05-31T01:49:03+02:00
 last_editor: Erik Hagen
 
 ---
