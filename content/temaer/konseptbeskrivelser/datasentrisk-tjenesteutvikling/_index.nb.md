@@ -83,12 +83,17 @@ Konseptvalget skal ikke være tatt før det er begrunnet. I dette avsnittet vise
 
 Det avgjørende for konseptvalget er ikke at det finnes ett enkelt kriterium der ett alternativ utmerker seg. Det er at SAMT-BU har seks krav som må oppfylles *samtidig*:
 
-1. **Data nås der de eies.** Søknaden er eksplisitt på at vi ikke skal kopiere eller flytte data ut av kontekst. Folkeregisteret, Enhetsregisteret, Matrikkelen og fagsystemene i kommunene blir værende der de er.
-2. **Semantisk interoperabilitet på tvers.** Det skal være mulig å vite om "samboer" i NAV, Skatteetaten og folkeregisteret refererer til samme entitet, og hvor de skiller seg. Dette gjelder hundrevis av tilsvarende begreper.
-3. **Gradvis utvidelse uten brudd.** Nye begreper må kunne legges til uten at eksisterende data eller tjenester invalideres. Bakoverkompatibilitet skal være en grunnleggende egenskap ved arkitekturen, ikke en operasjonell øvelse hver gang noe endres.
-4. **Internasjonal samhandling.** EUs operative rammeverk – Single Digital Gateway, Once-Only Technical System, Data Spaces og MIMs Plus – bygger på felles semantiske datamodeller (SEMICs Core Vocabularies, CPSV-AP, CCCEV, DCAT-AP og beslektede standarder). Disse modellene er RDF-baserte, selv der utvekslingsformatet på linja er XML eller JSON. Norge må kunne kobles på dette økosystemet av delte begreper, ikke bygge en særvariant. *Detaljert mapping mot MIMs Plus følger i seksjon 6.*
-5. **AI-etterrettelighet.** Hvis offentlig sektor skal bruke AI-agenter i tjenesteyting, må svarene kunne etterprøves og forankres i autoritative kilder med eksplisitt mening.
-6. **Felles begreper for sammenhengende brukerreiser.** Brukerreisene på tvers av etater forutsetter at samme begrep forstås konsistent. Dette er hele rasjonalen bak prosjektet.
+**1. Data nås der de eies.** Søknaden er eksplisitt på at vi ikke skal kopiere eller flytte data ut av kontekst. Folkeregisteret, Enhetsregisteret, Matrikkelen og fagsystemene i kommunene blir værende der de er.
+
+**2. Semantisk interoperabilitet på tvers.** Det skal være mulig å vite om "samboer" i NAV, Skatteetaten og folkeregisteret refererer til samme entitet, og hvor de skiller seg. Dette gjelder hundrevis av tilsvarende begreper.
+
+**3. Gradvis utvidelse uten brudd.** Nye begreper må kunne legges til uten at eksisterende data eller tjenester invalideres. Bakoverkompatibilitet skal være en grunnleggende egenskap ved arkitekturen, ikke en operasjonell øvelse hver gang noe endres.
+
+**4. Internasjonal samhandling.** EUs operative rammeverk – Single Digital Gateway, Once-Only Technical System, Data Spaces og MIMs Plus – bygger på felles semantiske datamodeller (SEMICs Core Vocabularies, CPSV-AP, CCCEV, DCAT-AP og beslektede standarder). Disse modellene er RDF-baserte, selv der utvekslingsformatet på linja er XML eller JSON. Norge må kunne kobles på dette økosystemet av delte begreper, ikke bygge en særvariant. *Detaljert mapping mot MIMs Plus følger i seksjon 6.*
+
+**5. AI-etterrettelighet.** Hvis offentlig sektor skal bruke AI-agenter i tjenesteyting, må svarene kunne etterprøves og forankres i autoritative kilder med eksplisitt mening.
+
+**6. Felles begreper for sammenhengende brukerreiser.** Brukerreisene på tvers av etater forutsetter at samme begrep forstås konsistent. Dette er hele rasjonalen bak prosjektet.
 
 ### Vurderte alternativer
 
