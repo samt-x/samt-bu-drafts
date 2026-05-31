@@ -398,7 +398,17 @@ To av prosjektets mål gjør EU-tilkoblingen ikke-valgfri:
 
 Det er teknisk og politisk lite hensiktsmessig å bygge en norsk særvariant og deretter mappe ut mot EU. Det er enklere, og strategisk klokere, å bygge på det semantiske grunnlaget EU-økosystemet allerede har etablert. Det betyr ikke at vi importerer alt – det betyr at vi tar utgangspunkt der i stedet for å oppfinne i parallell.
 
-### 6.2 MIMs Plus som operativt rammeverk
+### 6.2 EU Data Spaces og DSSC Blueprint
+
+**EU Data Spaces som rammeverkskonsept.** EUs datapolitikk siden 2020 er organisert rundt konseptet *data spaces* – fødererte, sektorspesifikke datadelingsinfrastrukturer der data forblir hos eier og deles gjennom standardiserte kontrakter og protokoller. EU finansierer i dag datarom på tvers av helse, utdanning og ferdigheter (Skills Data Space), mobilitet, landbruk, energi og industri. SAMT-BU er direkte berørt: Skills Data Space, som søknaden eksplisitt refererer til, er det europeiske datarommets svar på behovet for å dele utdannings- og kompetansedata på tvers av landegrenser – og det er arkitekturen SAMT-BU må kunne koble seg på.
+
+**DSSC Blueprint som referansearkitektur.** Data Spaces Support Centre (DSSC), EU-finansiert, vedlikeholder [Blueprint for Data Spaces](https://blueprint.dssc.eu/) – den autoritative referansearkitekturen for europeiske datarom. Blueprint V3.0 organiserer tekniske kapabiliteter i tre søyler: *Data Interoperability* (felles datamodeller, semantikk og utvekslingsprotokoller), *Data Sovereignty and Trust* (identitet, tillitsrammeverk og policyhåndhevelse) og *Data Value Creation Enablers* (katalogoppdagelse, datatjenester og verdikjeder). Hvert av disse korresponderer direkte med begreper vi bruker i konseptet: informasjonsplan/kunnskapsplan, tilgangsstyring og dataproduktkontrakter, og kataloginfrastruktur.
+
+**Sammenhengen med det datasentriske paradigmet.** Det som er slående ved Blueprint-arkitekturen er at dens tekniske fundament er det datasentriske paradigmet: RDF/OWL som kunnskapsrepresentasjon, ODRL for rettighetsuttrykk mot datasett, DCAT-AP for kataloger, og R2RML/RML for å mappe eksisterende datakilder til det semantiske laget. Dataspace Protocol (DSP) operasjonaliserer prinsippet om at data forblir hos eier mens kontrakter og rettigheter styrer aksess. SAMT-BU velger ikke en norsk særvariant av datasentrisk arkitektur – vi velger den samme teknologiske retningen som EU-dataromsøkosystemet bygger på. Det er dette som gjør internasjonal kompatibilitet til noe annet enn etterarbeid: vi er kompatible fordi vi bygger på felles grunnlag, ikke fordi vi etterpå mapper oss til det.
+
+**DSSC Standards Landscape Update.** DSSC publiserer jevnlig en [Standards Landscape Update](https://dssc.eu/space/SE1/185794561/) (versjon 1.0, januar 2026) som kartlegger standardiseringsstatus og -gap i europeiske datarom. Dokumentet er en nyttig løpende referanse for arkitekturgruppa, men er en statusrapport snarere enn en normativ standard. De standardene som er mest relevante for det datasentriske paradigmet, er behandlet konkret i 6.6 nedenfor.
+
+### 6.3 MIMs Plus som operativt rammeverk
 
 **MIMs Plus** (Minimal Interoperability Mechanisms) er det operative interoperabilitetsrammeverket for offentlige tjenester i byer og kommuner, EU-finansiert og bygget på **ITU Y.4505**-standarden. Rammeverket spesifiserer for hvert mekanismeområde: objektiv, kapabilitet, krav, mekanisme, interoperabilitetsveiledning, og samsvarstesting.
 
@@ -421,7 +431,7 @@ MIMs Plus er strukturert i to lag:
 
 Det viktigste for SAMT-BU er at MIMs Plus er **operativt og ikke bare regulatorisk**: det navngir konkrete standarder, beskriver hvordan kapabiliteter skal realiseres, og er praktisk anvendbart i pilotene. Det er den brikken som binder regulatoriske rammeverk (SDGR, Data Act, AI Act) til faktiske tekniske valg.
 
-### 6.3 Mapping av våre seks krav mot MIMs Plus
+### 6.4 Mapping av våre seks krav mot MIMs Plus
 
 Kravene vi formulerte i konseptvalg-seksjonen er ikke ad hoc, men gjenfinnes i MIMs Plus. Følgende mapping viser sammenhengen:
 
@@ -439,7 +449,7 @@ Kravene vi formulerte i konseptvalg-seksjonen er ikke ad hoc, men gjenfinnes i M
 
 Mappingen viser at konseptvalget vårt ikke konkurrerer med MIMs Plus – det operasjonaliserer det. Når vi anbefaler "datasentrisk arkitektur med virtuell kunnskapsgraf og lagdelt ontologi", er det en konkretisering av hvordan MIMs 1 og 2 kan realiseres sammenhengende på norsk offentlig-sektor-skala.
 
-### 6.4 Application-specific MIMs som er særlig relevante for SAMT-BU
+### 6.5 Application-specific MIMs som er særlig relevante for SAMT-BU
 
 Tre av de domenespesifikke MIM-ene er direkte relevante for prosjektets piloter:
 
@@ -451,7 +461,7 @@ Tre av de domenespesifikke MIM-ene er direkte relevante for prosjektets piloter:
 
 MIM8 (Local Digital Twins) ligger noe mer på siden av kjerneområdet, men kan bli relevant for kommunale tjenesteflater, ungdomsklubber, og analoge brukerkontekster på lengre sikt.
 
-### 6.5 Sentrale standarder for målbildet
+### 6.6 Sentrale standarder for målbildet
 
 MIMs Plus navngir konkrete standarder under MIM2. Følgende er særlig aktuelle for SAMT-BU, sortert etter hva de hjelper med:
 
@@ -481,7 +491,14 @@ MIMs Plus navngir konkrete standarder under MIM2. Følgende er særlig aktuelle 
 
 For utdanningsdomenet spesifikt anbefaler vi at arkitekturgruppa også vurderer **PROV-O** (W3C-anbefalt provenans-vokabular for å spore datas opprinnelse og bearbeiding) og **ODRL** (Open Digital Rights Language for å uttrykke bruksvilkår), som begge er nevnt av Gioia og brukt i moderne dataproduktarkitekturer.
 
-### 6.6 Forholdet til norsk infrastruktur og pågående arbeid
+**For datarom-tilkobling og semantisk grunnlag (DSSC Blueprint):**
+
+- **RDF/RDFS/OWL** – det triniteten av W3C-standarder som er Blueprint-arkitekturens kunnskapsrepresentasjonslag. RDF beskriver grafen; RDFS og OWL definerer vokabular og ontologi-egenskaper. Disse er grunnlaget for hele det semantiske laget i konseptet – det er ikke tilfeldig at Blueprint eksplisitt løfter dem frem som fundament.
+- **[SHACL](#shacl)** (Shapes Constraint Language) – brukes til å validere at RDF-grafer er konformante med ontologikrav: kardinalitet, datatyper, tillatte verdier. Et nødvendig styringsverktøy når ontologien forvaltes av et føderert team og ulike aktører leverer data mot den.
+- **Dataspace Protocol (DSP)** – spesifiserer hvordan DCAT-kataloger, ODRL-policyer og dataoverføringsavtaler koordineres mellom konnektorer i et datarom. Det er DSP som operasjonaliserer «data forblir hos eier» i Blueprint-arkitekturen, og det er protokollen Skills Data Space bruker for grensekryssende datadeling.
+- **[LDES](#ldes)** (Linked Data Event Streams) – W3C-spesifikasjon for å publisere og konsumere datasett som evolusjonerende strømmer etter Linked Data-prinsippene. Relevant der autoritative kilder oppdateres løpende (for eksempel hendelsesstrømmer fra Folkeregisteret eller skoleregister) og konsumenter trenger å holde sin lokale tilstand synkronisert uten full re-last.
+
+### 6.7 Forholdet til norsk infrastruktur og pågående arbeid
 
 Flere norske initiativer ligger allerede tett opp mot EU-rammeverket og bør sees i sammenheng:
 
@@ -493,7 +510,7 @@ Flere norske initiativer ligger allerede tett opp mot EU-rammeverket og bør see
 
 Konseptbeskrivelsen mener ikke at alle disse skal endres. Den mener at *retningen* skal være konsistent: nye løsninger og utvidelser bør bygge på det semantiske grunnlaget, og eksisterende komponenter bør gradvis tilpasses der det er behov og kost-nytte.
 
-### 6.7 "Minimum-pluss"-posisjonen
+### 6.8 "Minimum-pluss"-posisjonen
 
 Det er én viktig nyanse å være eksplisitt på. MIMs Plus er bevisst formulert som *"minimal but sufficient"* interoperabilitet. Det er et baseline-rammeverk for at byer og kommuner skal komme i gang uten å investere i fullskala semantisk infrastruktur fra dag én.
 
@@ -507,7 +524,7 @@ Vi forsvarer denne "minimum-pluss"-posisjonen slik:
 
 Den praktiske konsekvensen er: alle MVP-er og piloter skal som minimum tilfredsstille MIMs Plus baseline (foundational MIMs 0–3 og 6 der de er relevante), og de skal demonstrere hvordan baseline kan utvides med kunnskapsgraf-egenskaper for de domenene der det gir verdi.
 
-### 6.8 Hva som ikke er avklart
+### 6.9 Hva som ikke er avklart
 
 Tre forhold ligger utenfor det denne konseptbeskrivelsen kan avgjøre, og som arkitekturgruppa må vurdere:
 
@@ -593,9 +610,9 @@ Vi har dermed to verktøy mot innvendingen om at vi forveksler konsept og løsni
 
 Følgende er reelle åpne spørsmål som konseptbeskrivelsen med overlegg lar stå:
 
-- **Implementeringsstack.** Triplestores, virtuelle grafmotorer, mapping-motorer (R2RML/RML) eller property-graph-baserte løsninger er teknologivalg for målbildet. Utdypet i 6.8.
-- **Valg av øvre ontologi.** BFO, GIST eller en pragmatisk variant – standardene finnes, men valget for det norske offentlige domenet er arkitekturgruppas (6.8).
-- **NGSI-LD kontra en mer generell RDF-tilnærming.** Trolig RDF/SPARQL med JSON-LD-fronter for utdanningsdata, og NGSI-LD der sanntids- og IoT-data inngår – men dette er et målbildevalg (6.8).
+- **Implementeringsstack.** Triplestores, virtuelle grafmotorer, mapping-motorer (R2RML/RML) eller property-graph-baserte løsninger er teknologivalg for målbildet. Utdypet i 6.9.
+- **Valg av øvre ontologi.** BFO, GIST eller en pragmatisk variant – standardene finnes, men valget for det norske offentlige domenet er arkitekturgruppas (6.9).
+- **NGSI-LD kontra en mer generell RDF-tilnærming.** Trolig RDF/SPARQL med JSON-LD-fronter for utdanningsdata, og NGSI-LD der sanntids- og IoT-data inngår – men dette er et målbildevalg (6.9).
 - **Identifikatorstrategi.** Hvilke persistente, unike identifikatorer som skal binde entiteter sammen på tvers (MIM1), og hvordan de forholder seg til eksisterende nasjonale identifikatorer, er ikke avklart her.
 - **Forvaltning av mapping-laget.** Hvordan mappingene mellom datakilder og ontologi (R2RML/RML) skal versjoneres, testes og eies operativt, er en målbilde- og driftssak.
 - **Materialiseringsgrad over tid.** Konseptet starter virtuelt. Når og om enkelte deler bør materialiseres – referert data kan materialiseres senere, men ikke omvendt (4.1) – er et veikartspørsmål, ikke et konseptvalg.
@@ -735,6 +752,14 @@ EUs mellomvareplattform for europeiske datarom – Europakommisjonen. Policy Fil
 #### Altinn Autorisasjon
 
 Nasjonal tilgangsstyrings- og ressursregister-infrastruktur – Digdir/Altinn. <https://docs.altinn.studio/authorization/>
+
+#### SHACL
+
+Shapes Constraint Language – W3C. Validerer at RDF-grafer er konformante med ontologikrav (kardinalitet, datatyper, tillatte verdier). <https://www.w3.org/TR/shacl/>
+
+#### LDES
+
+Linked Data Event Streams – W3C Community Group. Publiserer og konsumerer evolusjonerende datasett som strømmer etter Linked Data-prinsippene. <https://w3id.org/ldes/specification>
 
 ### Regelverk
 
