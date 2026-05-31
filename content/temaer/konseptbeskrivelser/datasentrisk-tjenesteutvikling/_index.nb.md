@@ -738,7 +738,11 @@ Nasjonal tilgangsstyrings- og ressursregister-infrastruktur – Digdir/Altinn. <
 
 ### Regelverk
 
-*Dette underkapitlet er under utvikling og dekker foreløpig bare et lite utvalg av relevant regelverk. Henvisninger til blant annet personvernforordningen (GDPR), pasientjournalloven, opplæringsloven og sektorspesifikke hjemler for datadeling vil bli lagt til.*
+*Dette underkapitlet er under utvikling. Bildet nedenfor er ikke komplett og vil endre seg i takt med at nytt regelverk trer i kraft og norsk gjennomføring avklares.*
+
+Digdir vedlikeholder en løpende [oversikt over EU-regelverk om deling og bruk av data](https://www.digdir.no/datadeling/oversikt-over-eu-regelverk-om-deling-og-bruk-av-data/3251) som er relevant for norsk offentlig sektor. Per tidspunktet for denne konseptbeskrivelsen dekker oversikten ti forordninger og direktiver, gruppert i to lag: fire kjernelover som direkte regulerer personvern og datadeling – **GDPR** (personvernforordningen), **Åpne data-direktivet** (ODD), **Dataforvaltningsforordningen** (DGA) og **Dataforordningen** (Data Act) – og seks tilgrensende regelverk: KI-forordningen, eIDAS, Single Digital Gateway (SDG), Digital Markets Act (DMA), Digital Services Act (DSA) og Interoperable Europe Act. Merk at Digdir-lenker historisk har blitt ugyldige ved nettstedsoppdateringer – søk på tittelen hvis lenken er brutt.
+
+Utover EU-regelverket er sektorspesifikke norske lover direkte relevante for SAMT-BUs domene: pasientjournalloven, helseregisterloven, opplæringsloven og barnevernsloven regulerer hvilke data som kan behandles og deles, og på hvilke vilkår. Disse, samt eventuelle nye hjemler som følger av prosjektets arbeid, vil bli lagt til etter hvert.
 
 #### EUs KI-forordning (AI Act)
 
