@@ -738,6 +738,8 @@ Nasjonal tilgangsstyrings- og ressursregister-infrastruktur – Digdir/Altinn. <
 
 ### Regelverk
 
+*Dette underkapitlet er under utvikling og dekker foreløpig bare et lite utvalg av relevant regelverk. Henvisninger til blant annet personvernforordningen (GDPR), pasientjournalloven, opplæringsloven og sektorspesifikke hjemler for datadeling vil bli lagt til.*
+
 #### EUs KI-forordning (AI Act)
 
 Forordning (EU) 2024/1689. Forpliktelsene for høyrisiko-KI etter Annex III ble gjennom Digital Omnibus-enigheten i mai 2026 utsatt til desember 2027. <https://eur-lex.europa.eu/eli/reg/2024/1689/oj> · <https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai>
