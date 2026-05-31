@@ -79,9 +79,9 @@ Konseptbeskrivelsen er skrevet med ambisjon om å være lesbar for ledere og fag
 
 Konseptvalget skal ikke være tatt før det er begrunnet. I dette avsnittet viser vi hvilke alternative konsepter vi har vurdert, hvilke krav vi har målt dem mot, og hvorfor vi lander der vi lander. Hensikten er at leseren skal kunne være uenig i konklusjonen på begrunnet grunnlag, ikke avvise den fordi alternativene aldri ble nevnt.
 
-### Krav som må holdes samtidig
+### Kravene ambisjonen stiller
 
-Det avgjørende for konseptvalget er ikke at det finnes ett enkelt kriterium der ett alternativ utmerker seg. Det er at SAMT-BU har seks krav som må oppfylles *samtidig*:
+Ambisjonen om sammenhengende, tverrsektorielle tjenester – på tvers av alt det offentlige har ansvar for – stiller disse kravene:
 
 **1. Data nås der de eies.** Søknaden er eksplisitt på at vi ikke skal kopiere eller flytte data ut av kontekst. Folkeregisteret, Enhetsregisteret, Matrikkelen og fagsystemene i kommunene blir værende der de er.
 
@@ -129,7 +129,7 @@ Tegnforklaring: ✓ oppfyller, △ delvis, ✗ oppfyller ikke. Vurderingene er k
 
 ### Konvergens, ikke maksimering
 
-Argumentet for alternativ G er ikke at det er "best" på hver enkelt dimensjon. Argumentet er at det er det eneste konseptet som **simultant** oppfyller alle seks krav, gitt SAMT-BUs ambisjonsnivå. Alternativene A–F er gode på noen kriterier hver, og noen er gode på flere – men ingen håndterer kombinasjonen.
+Argumentet for alternativ G er ikke at det er "best" på hver enkelt dimensjon. Argumentet er at det er det eneste konseptet som **simultant** oppfyller alle kravene, gitt ambisjonsnivået. Alternativene A–F er gode på noen kriterier hver, og noen er gode på flere – men ingen håndterer kombinasjonen.
 
 Dette skal ikke leses som at relasjonsmodeller er dårlige, at API-er er overflødige, eller at MDM er feil. Tvert imot vil flere av disse elementene inngå i den faktiske realiseringen: data forblir typisk lagret i relasjonsdatabaser hos eierne, integrasjoner skjer ofte via API-er, og MDM-prinsipper anvendes for utvalgte grunndata. Konseptvalget G handler om det *semantiske laget over* dette, og om hvordan dataprodukter eksponerer mening – ikke om å erstatte underliggende teknologi.
 
@@ -431,7 +431,7 @@ MIMs Plus er strukturert i to lag:
 
 Det viktigste for SAMT-BU er at MIMs Plus er **operativt og ikke bare regulatorisk**: det navngir konkrete standarder, beskriver hvordan kapabiliteter skal realiseres, og er praktisk anvendbart i pilotene. Det er den brikken som binder regulatoriske rammeverk (SDGR, Data Act, AI Act) til faktiske tekniske valg.
 
-### 6.4 Mapping av våre seks krav mot MIMs Plus
+### 6.4 Mapping av kravene mot MIMs Plus
 
 Kravene vi formulerte i konseptvalg-seksjonen er ikke ad hoc, men gjenfinnes i MIMs Plus. Følgende mapping viser sammenhengen:
 
