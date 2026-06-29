@@ -4,7 +4,7 @@ id: adc7381e-1309-4442-9cbb-a62058305c17
 title: "Joint project on vilbli.no and utdanning.no/karriereveiledning.no"
 linkTitle: "Joint project vilbli.no/utdanning.no"
 weight: 10
-lastmod: 2026-03-28T10:12:28+01:00
+lastmod: 2026-06-29T02:04:41+02:00
 last_editor: Erik Hagen
 
 ---
