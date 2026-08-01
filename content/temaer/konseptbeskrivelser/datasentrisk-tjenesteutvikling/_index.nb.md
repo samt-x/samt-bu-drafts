@@ -1,14 +1,13 @@
 ---
 id: 39286298-056f-4d68-9fe0-cdea507f59cb
 # id: auto-generert – kopierte verdier overskrives automatisk ved push
-title: "Datasentrisk tjenesteutvikling"
-linkTitle: "Datasentrisk tjenesteutvikling"
+title: Datasentrisk tjenesteutvikling
+linkTitle: Datasentrisk tjenesteutvikling
 weight: 10
 lastmod: 2026-05-31T13:48:42+02:00
 last_editor: Erik Hagen
 
 ---
-
 *Konseptbeskrivelse for SAMT-BU – utkast til arkitekturgruppa*
 
 ---
@@ -116,7 +115,7 @@ Vi har vurdert syv konsepter, fra de mest tradisjonelle til de mest ambisiøse:
 ### Sammenstilling
 
 | Konsept | Data der de eies | Semantisk interop. | Gradvis utvidelse | EU-kompatibilitet | AI-etterrettelighet | Brukerreiser |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|
+| --- | --- | --- | --- | --- | --- | --- |
 | A. Datalager / datasjø | ✗ | △ | ✗ | ✗ | △ | ✗ |
 | B. MDM alene | △ | △ | ✗ | ✗ | △ | △ |
 | C. ESB / kanonisk modell (FINT-stil) | ✓ | △ | ✗ | ✗ | ✗ | △ |
@@ -179,17 +178,13 @@ Gioia anbefaler selv denne arkitekturen som realistisk startpunkt for moderne or
 
 Den lagdelte tilnærmingen organiserer dette i fire lag:
 
-**Øvre ontologi (upper ontology).**
-Universelle begreper som overskrider domener: objekt, hendelse, tid, sted, agent, rolle. Etablerte standarder finnes ([BFO](#bfo) – Basic Formal Ontology, [GIST](#gist)). Et offentlig norsk konsept skal kunne uttrykkes som en spesialisering av disse abstrakte byggesteinene.
+**Øvre ontologi (upper ontology)**.Universelle begreper som overskrider domener: objekt, hendelse, tid, sted, agent, rolle. Etablerte standarder finnes ([BFO](#bfo) – Basic Formal Ontology, [GIST](#gist)). Et offentlig norsk konsept skal kunne uttrykkes som en spesialisering av disse abstrakte byggesteinene.
 
-**Domeneontologi.**
-Begreper som er felles for "offentlig forvaltning i Norge": person (med adresse, identifikator, statsborgerskap), virksomhet, tjeneste, vedtak, hendelse, samtykke, fullmakt, beslutning. Dette er kjernemodellen, og det er her det meste av det semantiske arbeidet skjer for prosjektets ambisjon om sammenhengende tjenester. SEMICs Core Vocabularies (Core Person, Core Public Service, Core Organization, Core Location, CCCEV) gir en EU-koblet startpakke for dette laget – ikke som krav vi underkaster oss, men som naturlige forankringspunkter som sparer arbeid og garanterer cross-border-kompatibilitet.
+**Domeneontologi**.Begreper som er felles for "offentlig forvaltning i Norge": person (med adresse, identifikator, statsborgerskap), virksomhet, tjeneste, vedtak, hendelse, samtykke, fullmakt, beslutning. Dette er kjernemodellen, og det er her det meste av det semantiske arbeidet skjer for prosjektets ambisjon om sammenhengende tjenester. SEMICs Core Vocabularies (Core Person, Core Public Service, Core Organization, Core Location, CCCEV) gir en EU-koblet startpakke for dette laget – ikke som krav vi underkaster oss, men som naturlige forankringspunkter som sparer arbeid og garanterer cross-border-kompatibilitet.
 
-**Underdomeneontologier.**
-Sektorspesifikke utvidelser: utdanning (elev, lærer, fag, vurdering, vitnemål, opptak), helse, sosial, justis, arbeid. Hver sektor modellerer sitt domene og utvider domeneontologien der det er behov for spesialisering. SAMT-BU starter naturligvis i utdanningsdomenet.
+**Underdomeneontologier**.Sektorspesifikke utvidelser: utdanning (elev, lærer, fag, vurdering, vitnemål, opptak), helse, sosial, justis, arbeid. Hver sektor modellerer sitt domene og utvider domeneontologien der det er behov for spesialisering. SAMT-BU starter naturligvis i utdanningsdomenet.
 
-**Applikasjonsontologier.**
-Modeller knyttet til en spesifikk tjeneste eller pilot, for eksempel "skolebytte ved flytting mellom kommuner" eller "deling av vitnemål til arbeidsgiver". Dette er der konkrete brukerreiser modelleres, og der det meste av prosjektets piloter vil leve.
+**Applikasjonsontologier**.Modeller knyttet til en spesifikk tjeneste eller pilot, for eksempel "skolebytte ved flytting mellom kommuner" eller "deling av vitnemål til arbeidsgiver". Dette er der konkrete brukerreiser modelleres, og der det meste av prosjektets piloter vil leve.
 
 Lagene står i et **utvidelsesforhold**: et underdomenebegrep utvider et domenebegrep, som utvider et øvre konsept. Det betyr at en applikasjon som arbeider med utdanningsspesifikke begreper, automatisk arver de generelle egenskapene fra domene- og øvre lag uten å måtte gjenta dem.
 
@@ -211,14 +206,11 @@ Ordet "eierskap" brukes om data så bredt i norsk offentlig sektor at det dekker
 
 #### 4.3.1 Tre meninger av "eierskap"
 
-**Datasubjektets eierskap.**
-Persondata tilhører den personen dataene handler om. Virksomhetsdata tilhører virksomheten. Dette er en grunnleggende rett. Den operative realiseringen i målbildearkitekturen er **digitale lommebøker** – EUDI Wallet for personer, og tilsvarende konstruksjoner for virksomheter. Det er datasubjektet som kontrollerer hvilke data som deles, med hvem, under hvilke vilkår.
+**Datasubjektets eierskap**.Persondata tilhører den personen dataene handler om. Virksomhetsdata tilhører virksomheten. Dette er en grunnleggende rett. Den operative realiseringen i målbildearkitekturen er **digitale lommebøker** – EUDI Wallet for personer, og tilsvarende konstruksjoner for virksomheter. Det er datasubjektet som kontrollerer hvilke data som deles, med hvem, under hvilke vilkår.
 
-**Forvaltningsansvar (hjemmel eller samtykke).**
-En offentlig virksomhet kan ha *rett til å behandle* visse data – enten gjennom lovhjemmel eller gjennom samtykke fra subjektet. Dette er en juridisk-administrativ relasjon, ikke en eiendomsrett. Skatteetaten "eier" ikke skatteyterne eller deres inntektsopplysninger; etaten har hjemmel for spesifikk behandling for spesifikke formål. Når en kommune behandler data om elever, har den hjemmel eller samtykke – den er ikke "eier" i noen meningsfull forstand.
+**Forvaltningsansvar (hjemmel eller samtykke)**.En offentlig virksomhet kan ha *rett til å behandle* visse data – enten gjennom lovhjemmel eller gjennom samtykke fra subjektet. Dette er en juridisk-administrativ relasjon, ikke en eiendomsrett. Skatteetaten "eier" ikke skatteyterne eller deres inntektsopplysninger; etaten har hjemmel for spesifikk behandling for spesifikke formål. Når en kommune behandler data om elever, har den hjemmel eller samtykke – den er ikke "eier" i noen meningsfull forstand.
 
-**Dataproduktansvar.**
-Når denne konseptbeskrivelsen omtaler "dataprodukteier", mener vi noe mer spesifikt: den som har *operativt ansvar* for å forvalte et dataprodukt – kvalitet, tilgjengelighet, semantisk annotasjon, kontrakter og livssyklus. Dette er et forvaltnings- og leveranseansvar, ikke eiendomsrett. Folkeregisteret har dataproduktansvar for autoritativ personidentifikasjon på vegne av samfunnet; det "eier" ikke personene.
+**Dataproduktansvar**.Når denne konseptbeskrivelsen omtaler "dataprodukteier", mener vi noe mer spesifikt: den som har *operativt ansvar* for å forvalte et dataprodukt – kvalitet, tilgjengelighet, semantisk annotasjon, kontrakter og livssyklus. Dette er et forvaltnings- og leveranseansvar, ikke eiendomsrett. Folkeregisteret har dataproduktansvar for autoritativ personidentifikasjon på vegne av samfunnet; det "eier" ikke personene.
 
 De tre relasjonene kan opptre samtidig på samme data, men de er forskjellige relasjoner og må kunne diskuteres adskilt. Mye av uklarheten i dagens debatt om datadeling, samtykke og dataminimering kommer av at de blandes sammen.
 
@@ -246,7 +238,7 @@ Disse skal forbli autoritative. Ny autoritet for andre begreper skal etableres p
 
 De autoritative kildene tilbyr seg som **dataprodukter** med egenskapene Gioia beskriver: tydelig dataproduktansvar (i tredje forstand av "eierskap"), eksplisitte kontrakter, selvbeskrivende metadata, og semantisk annotering som binder feltene til ontologien. Den siste – semantisk annotering, for eksempel gjennom Data Product Descriptor Specification (DPDS) med "s-context"-annotasjoner – er det som lenker det enkelte dataproduktet til den lagdelte ontologien beskrevet i 4.2. Et felt som *fødselsdato* i Folkeregisterets persondata kan annoteres som instans av *birthDate* i Core Person Vocabulary, som igjen er spesialisering av en tidsangivelse i øvre ontologi.
 
-Den tekniske mapping-mekanismen mellom relasjonsdatabaser eller andre datakilder og den semantiske representasjonen kan formaliseres ved hjelp av etablerte standarder: **[R2RML](#r2rml-og-rml)** for relasjonsdata, **[RML](#r2rml-og-rml)** for semi-strukturert data (JSON, XML, CSV). Dette er praktiske verktøy som arkitekturgruppa kan bygge på, ikke konsernstrategiske valg.
+Den tekniske mapping-mekanismen mellom relasjonsdatabaser eller andre datakilder og den semantiske representasjonen kan formaliseres ved hjelp av etablerte standarder: [**R2RML**](#r2rml-og-rml) for relasjonsdata, [**RML**](#r2rml-og-rml) for semi-strukturert data (JSON, XML, CSV). Dette er praktiske verktøy som arkitekturgruppa kan bygge på, ikke konsernstrategiske valg.
 
 Det er viktig å understreke: de autoritative kildene fortsetter å bruke sine eksisterende teknologier – relasjonsdatabaser, REST-API-er, hendelseskøer. Det er den **semantiske påklisteringen** (annotasjoner, mapping) som er ny, ikke selve datalageret.
 
@@ -270,7 +262,7 @@ En konsekvens McComb gjør eksplisitt: i en datasentrisk arkitektur trenger man 
 Den datasentriske arkitekturen kan organiseres i fire lag (Gioia, kap. 11), som vist i tabellen. Kolonnen "ansvar" må her leses i tråd med distinksjonen i 4.3 – det er forvaltnings- og leveranseansvar, ikke eiendomsrett.
 
 | Lag | Hva det er | Ansvar |
-|---|---|---|
+| --- | --- | --- |
 | Dataplan | Selve dataene i kildesystemene | Autoritative kilder / dataproduktansvarlige |
 | Informasjonsplan | Data + metadata (struktur, kvalitet, tilgjengelighet, bruksvilkår) | Autoritative kilder / dataproduktansvarlige |
 | Kunnskapsplan | Felles ontologi og semantiske koblinger | Føderert modelleringsteam |
@@ -310,7 +302,7 @@ Hvordan dette står i forhold til prosjektets eksisterende rammeverk – og sær
 
 Tilgangsstyring følger samme logikk som resten av arkitekturen: det stabile er dataene, ikke tjenestene som eksponerer dem. Et applikasjonssentrisk landskap spør «har bruker X lov til å kalle tjeneste Y?». En datasentrisk arkitektur spør «har bruker X lov til å se disse dataene, uavhengig av hvilken tjeneste som eksponerer dem?». Distinksjonen er ikke akademisk i SAMT-BUs domene, der sensitive opplysninger om barn og unge flyter på tvers av barnehage, skole, kommune og stat: det er dataene og innholdet deres som er regulert, mens API-ene er utskiftbare projeksjoner. Tilgangsregler knyttet til tjenesten må bygges på nytt for hver nye tjeneste og passer dårlig med den virtuelle kunnskapsgrafens logikk.
 
-Konsekvensen for konseptet er ett prinsipp: rettigheter knyttes til data, ikke til API-er. Det er meningsfullt å uttrykke en rettighet mot en abstrakt, persistent identifisert ressurs – et datasett – uavhengig av om det eksponeres via REST, et SPARQL-endepunkt eller filnedlasting. En regel kan da si at «saksbehandlere i barnevernstjenesten kan bruke opplysninger fra [datasett] til formål [Y] i periode [X]», og forbli gyldig når den tekniske distribusjonen skiftes ut. Dette knytter an til de tre betydningene av «eierskap» i 4.3.1: tilgangsstyringen håndhever den juridiske og forvaltningsmessige kontrollen over dataene, ikke et teknisk endepunkt. [ODRL](#odrl) er standarden som er bygget for å uttrykke slike rettigheter mot datasett.
+Konsekvensen for konseptet er ett prinsipp: rettigheter knyttes til data, ikke til API-er. Det er meningsfullt å uttrykke en rettighet mot en abstrakt, persistent identifisert ressurs – et datasett – uavhengig av om det eksponeres via REST, et SPARQL-endepunkt eller filnedlasting. En regel kan da si at «saksbehandlere i barnevernstjenesten kan bruke opplysninger fra \[datasett\] til formål \[Y\] i periode \[X\]», og forbli gyldig når den tekniske distribusjonen skiftes ut. Dette knytter an til de tre betydningene av «eierskap» i 4.3.1: tilgangsstyringen håndhever den juridiske og forvaltningsmessige kontrollen over dataene, ikke et teknisk endepunkt. [ODRL](#odrl) er standarden som er bygget for å uttrykke slike rettigheter mot datasett.
 
 Hvordan dette håndheves maskinelt – forholdet mellom policy-uttrykk og håndhevingsarkitektur, og hva dagens nasjonale infrastruktur støtter – er et målbilde- og arkitekturspørsmål, ikke et konseptvalg. Det behandles som åpent spørsmål i 8.2.
 
@@ -344,20 +336,15 @@ FINT-referansen ligger som inspirasjon på siden av dette – vurdert som altern
 
 Søknadens språk er pragmatisk og åpent. Konseptbeskrivelsen gir disse begrepene et presist arkitektonisk innhold:
 
-**"Mellomlaget" → den virtuelle kunnskapsgrafen.**
-Mellomlaget i søknaden var en velvalgt plassholder for noe det ikke fantes en etablert betegnelse for. Det vi nå konkretiserer det som, er en *virtuell kunnskapsgraf* der dataene fra autoritative kilder blir tilgjengelige gjennom semantiske koblinger til en felles ontologi. Egenskapen "data nås der de eies, uten lokale kopier" blir ivaretatt – og forsterket, fordi det nå er entydig hva slags struktur konsumenter ser når de når data gjennom mellomlaget.
+**"Mellomlaget" → den virtuelle kunnskapsgrafen**.Mellomlaget i søknaden var en velvalgt plassholder for noe det ikke fantes en etablert betegnelse for. Det vi nå konkretiserer det som, er en *virtuell kunnskapsgraf* der dataene fra autoritative kilder blir tilgjengelige gjennom semantiske koblinger til en felles ontologi. Egenskapen "data nås der de eies, uten lokale kopier" blir ivaretatt – og forsterket, fordi det nå er entydig hva slags struktur konsumenter ser når de når data gjennom mellomlaget.
 
-**"Felles informasjonsmodeller" → den lagdelte ontologien.**
-I søknadens språk er "felles informasjonsmodeller" en samlebetegnelse for delte representasjoner av begreper. I konseptet her er det realisert som en lagdelt ontologi (øvre, domene, underdomene, applikasjon) som lar både fellestrekk og sektorspesifikke utvidelser være eksplisitte. SEMICs Core Vocabularies gir EU-kompatible startpakker for domenelaget. Den lagdelte strukturen er den arkitektoniske egenskapen som lar modellene utvides monotont uten å bryte eksisterende bruk – noe en flat informasjonsmodell ikke gir.
+**"Felles informasjonsmodeller" → den lagdelte ontologien**.I søknadens språk er "felles informasjonsmodeller" en samlebetegnelse for delte representasjoner av begreper. I konseptet her er det realisert som en lagdelt ontologi (øvre, domene, underdomene, applikasjon) som lar både fellestrekk og sektorspesifikke utvidelser være eksplisitte. SEMICs Core Vocabularies gir EU-kompatible startpakker for domenelaget. Den lagdelte strukturen er den arkitektoniske egenskapen som lar modellene utvides monotont uten å bryte eksisterende bruk – noe en flat informasjonsmodell ikke gir.
 
-**"Felles tjenestekatalog" → tjeneste-ontologi og dataproduktkontrakter.**
-I søknaden er tjenestekatalogen tenkt som en oversikt over offentlige tjenester. I konseptet får tjenester sin semantiske representasjon i ontologien (på domene- og applikasjonslag, naturlig basert på CPSV-AP), mens de operative kontraktene knyttet til hver tjeneste og hvert dataprodukt får sin egen formalisering ([DPDS](#dpds), ODRL for bruksvilkår). Katalogen blir altså en sammensetning av semantiske beskrivelser og kontraktsbeskrivelser, ikke en flat liste.
+**"Felles tjenestekatalog" → tjeneste-ontologi og dataproduktkontrakter**.I søknaden er tjenestekatalogen tenkt som en oversikt over offentlige tjenester. I konseptet får tjenester sin semantiske representasjon i ontologien (på domene- og applikasjonslag, naturlig basert på CPSV-AP), mens de operative kontraktene knyttet til hver tjeneste og hvert dataprodukt får sin egen formalisering ([DPDS](#dpds), ODRL for bruksvilkår). Katalogen blir altså en sammensetning av semantiske beskrivelser og kontraktsbeskrivelser, ikke en flat liste.
 
-**"Felles begreps- og metadatakataloger" → forvaltningsstruktur i og rundt kunnskapsgrafen.**
-Begrepskatalogen er i praksis et menneskelig grensesnitt mot domeneontologien. Metadatakataloger som [DCAT-AP-NO](#dcat-ap-no) beskriver dataprodukter på et nivå konsumenter trenger for å finne fram. I konseptet er disse koblet til kunnskapsgrafen og ikke separate løsninger – noe som også løser problemet beskrevet i 4.3.2 om at en katalog uten en strukturell konsolideringsmekanisme har vist seg vanskelig å holde konsistent.
+**"Felles begreps- og metadatakataloger" → forvaltningsstruktur i og rundt kunnskapsgrafen**.Begrepskatalogen er i praksis et menneskelig grensesnitt mot domeneontologien. Metadatakataloger som [DCAT-AP-NO](#dcat-ap-no) beskriver dataprodukter på et nivå konsumenter trenger for å finne fram. I konseptet er disse koblet til kunnskapsgrafen og ikke separate løsninger – noe som også løser problemet beskrevet i 4.3.2 om at en katalog uten en strukturell konsolideringsmekanisme har vist seg vanskelig å holde konsistent.
 
-**"Datavirtualisering" → den virtuelle kunnskapsgrafen.**
-Dette er en direkte oversettelse: søknadens datavirtualisering er nettopp den *virtuelle* varianten i Gioias tre-arkitekturer-typologi (4.1). Den semantiske rikheten kunnskapsgrafen tilfører, er en presisering av hva virtualisering må innebære når den skal være meningsfull på tvers av sektorer – ikke bare adgang til data uten kopiering, men adgang med felles mening.
+**"Datavirtualisering" → den virtuelle kunnskapsgrafen**.Dette er en direkte oversettelse: søknadens datavirtualisering er nettopp den *virtuelle* varianten i Gioias tre-arkitekturer-typologi (4.1). Den semantiske rikheten kunnskapsgrafen tilfører, er en presisering av hva virtualisering må innebære når den skal være meningsfull på tvers av sektorer – ikke bare adgang til data uten kopiering, men adgang med felles mening.
 
 ### 5.3 Hvor vi går utover søknaden
 
@@ -436,16 +423,16 @@ Det viktigste for SAMT-BU er at MIMs Plus er **operativt og ikke bare regulatori
 Kravene vi formulerte i konseptvalg-seksjonen er ikke ad hoc, men gjenfinnes i MIMs Plus. Følgende mapping viser sammenhengen:
 
 | Vårt krav (seksjon 3) | Primær MIM-støtte | Hva MIM-en bidrar med |
-|---|---|---|
-| 1. Data nås der de eies | MIM0, MIM3 | API-tilgang til datakilder; dataøkosystem med føderert eierskap |
-| 2. Semantisk interoperabilitet | MIM1, MIM2 | Persistente entitetsidentifikatorer; felles datamodeller med eksplisitt semantikk |
-| 3. Gradvis utvidelse uten brudd | MIM2 | Standardiserte, utvidbare datamodeller |
-| 4. Internasjonal samhandling | Hele MIMs-rammeverket | Konkrete standardvalg som er EU-omforente |
-| 5. AI-etterrettelighet | MIM5 (kommende), MIM1, MIM2 | Semantisk grunnlag som lar AI-svar forankres i autoritative begreper |
-| 6. Felles begreper for brukerreiser | MIM1, MIM2 | Delte vokabularer som lar tjenester sammenstilles på tvers |
+| --- | --- | --- |
+| 1\. Data nås der de eies | MIM0, MIM3 | API-tilgang til datakilder; dataøkosystem med føderert eierskap |
+| 2\. Semantisk interoperabilitet | MIM1, MIM2 | Persistente entitetsidentifikatorer; felles datamodeller med eksplisitt semantikk |
+| 3\. Gradvis utvidelse uten brudd | MIM2 | Standardiserte, utvidbare datamodeller |
+| 4\. Internasjonal samhandling | Hele MIMs-rammeverket | Konkrete standardvalg som er EU-omforente |
+| 5\. AI-etterrettelighet | MIM5 (kommende), MIM1, MIM2 | Semantisk grunnlag som lar AI-svar forankres i autoritative begreper |
+| 6\. Felles begreper for brukerreiser | MIM1, MIM2 | Delte vokabularer som lar tjenester sammenstilles på tvers |
 | Tverrgående | MIM6 | Sikkerhet og autentisering for all dataaksess |
 
-<br>
+&lt;br&gt;
 
 Mappingen viser at konseptvalget vårt ikke konkurrerer med MIMs Plus – det operasjonaliserer det. Når vi anbefaler "datasentrisk arkitektur med virtuell kunnskapsgraf og lagdelt ontologi", er det en konkretisering av hvordan MIMs 1 og 2 kan realiseres sammenhengende på norsk offentlig-sektor-skala.
 
@@ -494,9 +481,9 @@ For utdanningsdomenet spesifikt anbefaler vi at arkitekturgruppa også vurderer 
 **For datarom-tilkobling og semantisk grunnlag (DSSC Blueprint):**
 
 - **RDF/RDFS/OWL** – det triniteten av W3C-standarder som er Blueprint-arkitekturens kunnskapsrepresentasjonslag. RDF beskriver grafen; RDFS og OWL definerer vokabular og ontologi-egenskaper. Disse er grunnlaget for hele det semantiske laget i konseptet – det er ikke tilfeldig at Blueprint eksplisitt løfter dem frem som fundament.
-- **[SHACL](#shacl)** (Shapes Constraint Language) – brukes til å validere at RDF-grafer er konformante med ontologikrav: kardinalitet, datatyper, tillatte verdier. Et nødvendig styringsverktøy når ontologien forvaltes av et føderert team og ulike aktører leverer data mot den.
+- [**SHACL**](#shacl) (Shapes Constraint Language) – brukes til å validere at RDF-grafer er konformante med ontologikrav: kardinalitet, datatyper, tillatte verdier. Et nødvendig styringsverktøy når ontologien forvaltes av et føderert team og ulike aktører leverer data mot den.
 - **Dataspace Protocol (DSP)** – spesifiserer hvordan DCAT-kataloger, ODRL-policyer og dataoverføringsavtaler koordineres mellom konnektorer i et datarom. Det er DSP som operasjonaliserer «data forblir hos eier» i Blueprint-arkitekturen, og det er protokollen Skills Data Space bruker for grensekryssende datadeling.
-- **[LDES](#ldes)** (Linked Data Event Streams) – W3C-spesifikasjon for å publisere og konsumere datasett som evolusjonerende strømmer etter Linked Data-prinsippene. Relevant der autoritative kilder oppdateres løpende (for eksempel hendelsesstrømmer fra Folkeregisteret eller skoleregister) og konsumenter trenger å holde sin lokale tilstand synkronisert uten full re-last.
+- [**LDES**](#ldes) (Linked Data Event Streams) – W3C-spesifikasjon for å publisere og konsumere datasett som evolusjonerende strømmer etter Linked Data-prinsippene. Relevant der autoritative kilder oppdateres løpende (for eksempel hendelsesstrømmer fra Folkeregisteret eller skoleregister) og konsumenter trenger å holde sin lokale tilstand synkronisert uten full re-last.
 
 ### 6.7 Forholdet til norsk infrastruktur og pågående arbeid
 
@@ -776,3 +763,5 @@ Forordning (EU) 2024/1689. Forpliktelsene for høyrisiko-KI etter Annex III ble 
 #### EUDI Wallet
 
 Den europeiske digitale lommeboken under eIDAS 2 (forordning (EU) 2024/1183). For EØS-land inkludert Norge gjelder en frist mot slutten av 2027. <https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet-implementation>
+
+.
