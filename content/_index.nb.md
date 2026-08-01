@@ -13,3 +13,5 @@ Utkast og innspill til innhold på nettstedet generelt – faglige forslag, korr
 *Har du innspill til markedsdialogen? Det hører hjemme under [Innspill og dialoger](/ekstern-markedsdialog/innspill-og-dialoger/).*
 
 <!-- markør B2 -->
+
+<!-- markør D -->
