@@ -11,3 +11,5 @@ last_editor: Erik Hagen
 Utkast og innspill til innhold på nettstedet generelt – faglige forslag, korreksjoner og nye kapitler.
 
 *Har du innspill til markedsdialogen? Det hører hjemme under [Innspill og dialoger](/ekstern-markedsdialog/innspill-og-dialoger/).*
+
+<!-- Testlinje lagt til for aa teste avslags-funksjonen. Skal ikke tas inn. -->
