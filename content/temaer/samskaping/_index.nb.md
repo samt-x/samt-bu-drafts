@@ -1,4 +1,5 @@
 ---
+id: 0c4c36f8-238d-4329-8ccb-a591dfccc391
 title: Samskaping
 weight: 30
 ---
