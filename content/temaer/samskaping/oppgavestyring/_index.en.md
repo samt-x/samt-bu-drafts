@@ -13,8 +13,8 @@ Draft, August 2026. Written as a basis for discussion, not as a recommendation.
 
 The project manages tasks in two places at once:
 
-- **The core team uses MS Planner**, because that is the tool the project
-  management is comfortable with.
+- **The core team uses MS Planner**, which is readily available in the
+  Microsoft environment participants use day to day.
 - **The pilots use GitHub issues** in a shared repository, `Oppgaver`, where
   each item is labelled with the pilot it belongs to.
 

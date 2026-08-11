@@ -13,8 +13,8 @@ Utkast, august 2026. Skrevet som grunnlag for diskusjon, ikke som anbefaling.
 
 Prosjektet styrer oppgaver to steder samtidig:
 
-- **Kjerneteamet bruker MS Planner**, fordi det er verktøyet prosjektledelsen
-  er fortrolig med.
+- **Kjerneteamet bruker MS Planner**, som er lett tilgjengelig i det
+  Microsoft-miljøet deltakerne bruker til daglig.
 - **Pilotene bruker GitHub issues** i et felles repo, `Oppgaver`, der hver sak
   merkes med hvilken pilot den hører til.
 
