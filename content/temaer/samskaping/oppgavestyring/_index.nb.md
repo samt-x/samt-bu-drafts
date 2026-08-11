@@ -39,6 +39,27 @@ oppgavesystem ingen åpner er verdiløst, uansett hvor godt det er koblet til
 resten. Dette er ikke et spørsmål om hvilket verktøy som er best, men om hvor
 terskelen skal ligge – og for hvem.
 
+## Delingen er stabil, og det er nettopp problemet
+
+Parallelle oppgavesystemer beskrives gjerne som en midlertidig tilstand –
+«foreløpig bruker vi begge» – og blir så aldri besluttet, bare værende. Den
+vanlige innvendingen er at slikt forfaller: ett system vinner stille, og det
+andre blir liggende med gamle saker ingen har lukket, men som ser levende nok
+ut til at folk halvveis stoler på dem.
+
+Her er delingen av en annen type. Den følger ikke to konkurrerende verktøy,
+men en organisatorisk skillelinje: kjerneteamet på den ene siden, pilotene på
+den andre. Slike delinger forfaller ikke. De er tvert imot ganske stabile,
+nettopp fordi de to gruppene sjelden trenger hverandres oppgaveliste til
+daglig.
+
+Det er der problemet ligger. En stabil deling langs en organisasjonsgrense
+gjenskaper den siloen prosjektet finnes for å bryte ned. Risikoen er ikke at
+ordningen slutter å virke, men at den virker – og at den gjør arbeidet på den
+andre siden usynlig uten at noen merker det. Mønsteret er verdt å kjenne igjen
+også utenfor dette prosjektet: **verktøyvalg som følger organisasjonskartet,
+befester organisasjonskartet.**
+
 ## Felles backlog eller én per pilot?
 
 Pilotene har egne repoer for innhold, men deler backlog. Det kan se
@@ -79,5 +100,3 @@ kan bruke.
 - Hva skal til for at et verktøyskifte ikke bare flytter arbeidet til et sted
   der færre ser det?
 - Hvordan skal oppgaver som gjelder flere piloter merkes – og hvem eier dem?
-- Kan to verktøy leve side om side over tid, eller er delt oppgavestyring en
-  tilstand som alltid forfaller?

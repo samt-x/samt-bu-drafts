@@ -39,6 +39,26 @@ use it. A task system nobody opens is worthless, however well connected it is
 to everything else. This is not a question of which tool is best, but of where
 the threshold should sit – and for whom.
 
+## The split is stable, and that is precisely the problem
+
+Parallel task systems are usually described as a temporary state – "for now we
+use both" – and are then never decided, merely left in place. The usual
+objection is that such arrangements decay: one system quietly wins, and the
+other is left holding old items nobody has closed, yet looking alive enough
+that people half trust them.
+
+This split is of a different kind. It does not follow two competing tools, but
+an organisational boundary: the core team on one side, the pilots on the other.
+Splits like that do not decay. On the contrary, they are quite stable, precisely
+because the two groups rarely need each other's task list day to day.
+
+That is where the problem lies. A stable split along an organisational boundary
+recreates the very silo the project exists to break down. The risk is not that
+the arrangement stops working, but that it works – and that it renders the work
+on the other side invisible without anyone noticing. The pattern is worth
+recognising beyond this project too: **tool choices that follow the org chart
+entrench the org chart.**
+
 ## Shared backlog, or one per pilot?
 
 The pilots have their own repositories for content, but share a backlog. That
@@ -80,5 +100,3 @@ something others can use.
 - What does it take for a change of tool not to simply move the work to a place
   where fewer people see it?
 - How should tasks that concern several pilots be labelled – and who owns them?
-- Can two tools coexist over time, or is split task management a state that
-  always decays?
