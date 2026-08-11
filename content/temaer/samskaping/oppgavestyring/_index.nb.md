@@ -2,6 +2,9 @@
 id: 76aa6153-518c-40b5-bb51-bfa588d8001a
 title: Oppgavestyring
 weight: 10
+lastmod: 2026-08-12T01:50:27+02:00
+last_editor: Erik Hagen
+
 ---
 
 Utkast, august 2026. Skrevet som grunnlag for diskusjon, ikke som anbefaling.

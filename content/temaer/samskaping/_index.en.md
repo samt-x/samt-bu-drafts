@@ -2,6 +2,9 @@
 id: 0c4c36f8-238d-4329-8ccb-a591dfccc391
 title: Co-creation
 weight: 30
+lastmod: 2026-08-12T01:50:27+02:00
+last_editor: Erik Hagen
+
 ---
 
 Contributions and drafts on how work is organised when many organisations take
