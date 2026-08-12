@@ -33,7 +33,7 @@ distribution of work.
 ## How things stand today
 
 The pilots record their tasks as issues in a shared work area on GitHub called
-`Oppgaver`. Each item is labelled with the pilot it belongs to. In August 2026
+"Oppgaver". Each item is labelled with the pilot it belongs to. In August 2026
 it holds 62 items: 6 labelled pilot 1, 14 pilot 2 and 24 pilot 3. Pilot 4 has
 been given its own label, but has not started using it.
 
@@ -56,7 +56,7 @@ all.
 ## How it could work
 
 An organisation-level project board can pull items from several work areas at
-once: from `Oppgaver`, from the pilots' own areas and from the documentation.
+once: from "Oppgaver", from the pilots' own areas and from the documentation.
 
 Each item can then stay where it belongs, while the board provides a combined
 cross-cutting overview. You keep the link between a task and the specific work

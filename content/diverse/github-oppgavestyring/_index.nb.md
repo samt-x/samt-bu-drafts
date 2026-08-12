@@ -32,7 +32,7 @@ hører hjemme i én bestemt pilot eller i kjerneteamets interne fordeling.
 ## Slik er det i dag
 
 Pilotene legger oppgavene sine som saker i et felles arbeidsområde på GitHub,
-kalt `Oppgaver`. Hver sak merkes med hvilken pilot den tilhører. I august 2026
+kalt «Oppgaver». Hver sak merkes med hvilken pilot den tilhører. I august 2026
 ligger det 62 saker der: 6 merket pilot 1, 14 pilot 2 og 24 pilot 3. Pilot 4
 har fått sin egen merkelapp, men har ikke tatt den i bruk ennå.
 
@@ -56,7 +56,7 @@ hele tatt.
 ## Hvordan det kunne virke
 
 Et prosjektbrett på organisasjonsnivå kan hente saker fra flere arbeidsområder
-samtidig: fra `Oppgaver`, fra pilotenes egne områder og fra dokumentasjonen.
+samtidig: fra «Oppgaver», fra pilotenes egne områder og fra dokumentasjonen.
 
 Da kan hver sak fortsatt ligge der den hører hjemme, mens brettet gir en samlet
 oversikt på tvers. Man beholder koblingen mellom en oppgave og det konkrete
