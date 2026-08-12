@@ -14,6 +14,9 @@ Dette er en drøfting av hva som ser ut til å være god praksis, med erfaringen
 fra SAMT-BU som grunnlag. Et konkret forslag for dette prosjektet finnes under
 [Innspill om utvidet bruk av GitHub for oppgavestyring](https://docs.samt-bu.no/utkast/diverse/github-oppgavestyring/).
 
+Eksemplene er hentet fra GitHub, som SAMT-BU bruker. Prinsippene er ikke
+bundet til den plattformen – se avsnittet om verktøy nederst.
+
 Utkast, august 2026.
 
 ## Oppgaver bør ligge der arbeidet ligger
@@ -94,10 +97,71 @@ seg.
 Dette er en reell kostnad ved felles arbeidsflater, og den er verdt å kjenne
 til på forhånd. Den forsvinner ikke ved å velge et annet verktøy.
 
+## Verktøy
+
+### Hva som kreves
+
+Skal samskaping fungere i et stort økosystem, på tvers av organisasjoner og
+land, må verktøyet ha noen egenskaper som ikke er selvsagte:
+
+- **Åpent å lese uten konto eller lisens.** Den som vurderer å delta, må kunne
+  se arbeidet først.
+- **Lav terskel for å bidra på tvers av organisasjonsgrenser.** Man må kunne
+  foreslå en endring uten å være innmeldt hos noen andre først.
+- **Varig historikk og opphav.** Hvem foreslo hva, når, og hva det ble til.
+  Uten dette forsvinner sporbarheten som gjør et innspill etterprøvbart.
+- **Ingen enkelt deltaker eier flaten.** Legges arbeidet i én parts
+  lisensmiljø, er de andre gjester der.
+- **Mulig å flytte.** Innholdet må kunne tas med til en annen plattform uten å
+  skrives om.
+
+### Git-plattformer
+
+Git-baserte plattformer er i dag den eneste familien som har alle fem samtidig,
+i praktisk bruk og i stor skala. Det er også grunnen til at internasjonalt
+standardiseringsarbeid har flyttet dit: W3C utvikler nå spesifikasjoner i åpne
+arbeidsområder på GitHub, der hvem som helst kan kommentere.
+
+SAMT-BU bruker GitHub, men tilsvarende løsninger kan realiseres andre steder:
+
+- **GitLab** – samme modell, og kan driftes i egen regi. EU-kommisjonen driver
+  sin egen GitLab-tjeneste for åpen kildekode.
+- **Forgejo og Gitea** – lettere alternativer beregnet på egen drift. Codeberg
+  er en europeisk, ideell tjeneste bygget på Forgejo.
+
+For offentlig sektor kan valget mellom driftet og selvdriftet ha betydning for
+digital suverenitet. Arbeidsformen er den samme uansett.
+
+### Hvorfor ikke de vanlige prosjektverktøyene
+
+Jira, Confluence, Planner og Notion er ofte bedre på oppgavefordeling isolert
+sett. Men de er bygget for én organisasjon: lesetilgang krever lisens,
+deltakelse krever å bli lagt til, og innholdet er tungt å ta med seg ut.
+
+De bryter dermed med de tre første kravene over – og det er ikke en innstilling
+som kan endres. De egner seg godt til intern fordeling av arbeid, og dårlig som
+felles flate i et økosystem.
+
+### Terskelen løses med et lag oppå, ikke ved å bytte ut
+
+Innvendingen mot git-plattformer er reell: de er laget for utviklere, og for
+mange er de fremmede.
+
+Men innvendingen treffer grensesnittet, ikke modellen. Det finnes
+redigeringsverktøy som legger seg oppå og skjuler maskineriet – dette
+nettstedet er selv et eksempel. Den som retter en side her, skriver i en vanlig
+teksteditor i nettleseren og trenger verken å kjenne git eller å ha sett
+GitHub. Samtidig kan den som vil, arbeide direkte mot repoet som før.
+
+Det er trolig den riktige veien: behold en åpen og etterprøvbar kjerne, og senk
+terskelen med lag oppå – framfor å velge et lukket verktøy fordi det er lettere
+å komme i gang med.
+
 ## Det vi ikke vet ennå
 
-- Om et samlebrett som henter saker fra flere steder gir nok oversikt i praksis,
-  eller om det bare blir enda en flate ingen åpner.
+- Om et samlebrett som henter saker fra flere arbeidsområder – i GitHub kalt et
+  Project – gir nok oversikt i praksis, eller om det bare blir enda en flate
+  ingen åpner.
 - Hvor mye av verdien som ligger i verktøyet, og hvor mye som ligger i at noen
   faktisk holder oversikten ved like.
 - Om terskelen for å delta senkes eller heves når arbeidet flyttes til åpne
