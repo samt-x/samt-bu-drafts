@@ -2,7 +2,7 @@
 id: 76aa6153-518c-40b5-bb51-bfa588d8001a
 title: Oppgavestyring
 weight: 10
-lastmod: 2026-08-12T03:29:44+02:00
+lastmod: 2026-08-12T03:51:12+02:00
 last_editor: Erik Hagen
 
 ---
