@@ -1,4 +1,5 @@
 ---
+id: f7b610ba-6a21-4596-aa9a-aa0ee0dab665
 title: "Suggestion: wider use of GitHub for task management"
 linkTitle: "GitHub for task management"
 weight: 70
