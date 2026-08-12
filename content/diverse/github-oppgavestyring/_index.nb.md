@@ -84,8 +84,16 @@ arbeidet et sted å være, ikke om å røre Planner.
 Skulle Planners rolle bli tatt opp senere – av hensyn til lisenser, universell
 utforming eller digital suverenitet – finnes det prosjektverktøy som kobler seg
 mot GitHub, slik at en oppgave viser status for den faktiske endringen.
-OpenProject er ett slikt, med åpen kildekode og utbredt bruk i offentlig
-forvaltning. Men det er et eget spørsmål, og bør behandles for seg.
+
+Et nærliggende eksempel er
+[OpenProject](https://interoperable-europe.ec.europa.eu/eu-oss-catalogue/solutions/openproject),
+et webbasert prosjektstyringsverktøy med åpen kildekode. Det er oppført i EUs
+katalog over åpen kildekode for offentlig sektor, retter seg uttrykkelig mot
+offentlig forvaltning, kan driftes i egen regi eller i EU-basert sky, og brukes
+blant annet av Europakommisjonen selv. Det oppfyller også kravene til
+universell utforming (WCAG 2.1).
+
+Men dette er et eget spørsmål, og bør behandles for seg.
 
 ## Spørsmål til diskusjon
 

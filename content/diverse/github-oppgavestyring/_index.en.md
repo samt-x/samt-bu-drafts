@@ -83,9 +83,17 @@ somewhere to live, not about touching Planner.
 
 Should Planner's role be reconsidered later – for reasons of licensing,
 accessibility or digital sovereignty – there are project tools that connect to
-GitHub, so that a task shows the status of the actual change. OpenProject is
-one such tool, open source and widely used in public administration. But that
-is a separate question, and should be handled on its own.
+GitHub, so that a task shows the status of the actual change.
+
+One obvious example is
+[OpenProject](https://interoperable-europe.ec.europa.eu/eu-oss-catalogue/solutions/openproject),
+a web-based open source project management tool. It is listed in the EU
+catalogue of open source for the public sector, is explicitly aimed at public
+administration, can be self-hosted or run in an EU-based cloud, and is used by
+the European Commission itself among others. It also meets the accessibility
+requirements (WCAG 2.1).
+
+But this is a separate question, and should be handled on its own.
 
 ## Questions for discussion
 
