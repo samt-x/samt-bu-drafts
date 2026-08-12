@@ -3,7 +3,7 @@ id: f7b610ba-6a21-4596-aa9a-aa0ee0dab665
 title: "Innspill om utvidet bruk av GitHub for oppgavestyring"
 linkTitle: "GitHub for oppgavestyring"
 weight: 70
-lastmod: 2026-08-12T04:01:00+02:00
+lastmod: 2026-08-12T04:12:19+02:00
 last_editor: Erik Hagen
 
 ---
