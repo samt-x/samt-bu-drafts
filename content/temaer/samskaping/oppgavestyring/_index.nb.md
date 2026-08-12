@@ -134,15 +134,32 @@ SAMT-BU bruker GitHub, men tilsvarende løsninger kan realiseres andre steder:
 For offentlig sektor kan valget mellom driftet og selvdriftet ha betydning for
 digital suverenitet. Arbeidsformen er den samme uansett.
 
-### Hvorfor ikke de vanlige prosjektverktøyene
+### Prosjektverktøyene
 
 Jira, Confluence, Planner og Notion er ofte bedre på oppgavefordeling isolert
 sett. Men de er bygget for én organisasjon: lesetilgang krever lisens,
 deltakelse krever å bli lagt til, og innholdet er tungt å ta med seg ut.
 
-De bryter dermed med de tre første kravene over – og det er ikke en innstilling
-som kan endres. De egner seg godt til intern fordeling av arbeid, og dårlig som
-felles flate i et økosystem.
+**OpenProject viser at disse tre ikke henger uløselig sammen.** Det er åpen
+kildekode under GPL-3.0, kan driftes i egen regi eller i EU-basert sky, retter
+seg uttrykkelig mot offentlig forvaltning, og brukes blant annet av
+Europakommisjonen. Det oppfyller også WCAG 2.1, som er et selvstendig poeng for
+offentlig sektor. Lisenskravet og innelåsingen faller dermed bort. I tillegg
+integrerer det mot både GitHub og GitLab, slik at en oppgave kan kobles til den
+konkrete endringen som løser den.
+
+Det som likevel gjenstår, er bidragsmodellen. **Ingen av disse verktøyene har
+en ekvivalent til fork og pull request.** For å bidra må du få en konto av en
+administrator på den installasjonen. Det er en arkitektonisk forskjell, ikke en
+innstilling.
+
+Skillet går altså ikke mellom åpen og lukket kildekode, men mellom verktøy som
+forutsetter at deltakerne allerede er innmeldt, og verktøy der en fremmed kan
+foreslå noe uten å bli medlem av noe først.
+
+Prosjektverktøyene egner seg derfor godt til intern fordeling av arbeid – og
+OpenProject er et reelt alternativ for den som vil ha det på åpne premisser.
+Som felles flate i et økosystem kommer de til kort.
 
 ### Terskelen løses med et lag oppå, ikke ved å bytte ut
 
@@ -159,13 +176,64 @@ Det er trolig den riktige veien: behold en åpen og etterprøvbar kjerne, og sen
 terskelen med lag oppå – framfor å velge et lukket verktøy fordi det er lettere
 å komme i gang med.
 
-## Det vi ikke vet ennå
+## Utfordringer – og hvor løsningene ligger
 
-- Om et samlebrett som henter saker fra flere arbeidsområder – i GitHub kalt et
-  Project – gir nok oversikt i praksis, eller om det bare blir enda en flate
-  ingen åpner.
-- Hvor mye av verdien som ligger i verktøyet, og hvor mye som ligger i at noen
-  faktisk holder oversikten ved like.
-- Om terskelen for å delta senkes eller heves når arbeidet flyttes til åpne
-  flater. Åpenhet gir innsyn, men åpne verktøy er ikke nødvendigvis enkle å ta
-  i bruk for alle.
+Ingen av disse er grunner til å la være. Det er ting man bør kjenne til på
+forhånd, og for hver av dem finnes det en kjent retning.
+
+### Ett brett blir fort enda en flate ingen åpner
+
+**Utfordringen.** Samler man alt på ett sted, kan resultatet bli en liste så
+lang at den ikke gir oversikt, bare dårlig samvittighet.
+
+**Retningen.** Skill mellom to nivåer, slik Altinn gjør – med GitHub som
+verktøy i begge:
+
+- **Porteføljenivå.** Få saker, grov oppløsning. Svarer på «hvordan går det med
+  de fire pilotene».
+- **Prosjektnivå.** Mange saker, fin oppløsning. Svarer på «hva gjør jeg nå».
+
+Feilen er å blande dem i ett brett. Da blir det for detaljert for den som vil ha
+oversikt, og for grovt for den som skal arbeide. To brett med ulik oppløsning
+dekker begge behov, uten at saken må ligge to steder.
+
+### Varsling kan ikke skreddersys
+
+**Utfordringen.** Som beskrevet over: man følger et arbeidsområde, ikke en
+merkelapp.
+
+**Retningen.** Slutt å løse det med varsler. Varsler er *push* – de kommer til
+deg, og kan bare skrus av eller på. Oversikt er *pull* – du oppsøker den når du
+trenger den.
+
+Et personlig utsyn på tvers – «hva er tildelt meg», «hva har endret seg i det
+jeg følger» – dekker mesteparten av behovet uten en eneste e-post. Slike
+spørringer på tvers av arbeidsområder finnes i verktøyene allerede.
+
+Her er det også rimelig å vente at assistenter blir en reell hjelp: å få «dette
+har skjedd siden sist som angår deg» oppsummert, framfor tjue varsler man skal
+sortere selv. Da er ikke finmasket varslingsstyring lenger det som avgjør om
+man henger med.
+
+### Noen må holde oversikten ved like
+
+**Utfordringen.** Et brett som ikke stemmer er verre enn ingen brett, fordi
+folk stoler på det en stund før de slutter.
+
+**Retningen.** Utled status av arbeidet i stedet for å vedlikeholde den. Lukkes
+en sak av seg selv når endringen den gjelder er tatt inn, er brettet oppdatert
+uten at noen har gjort noe. Det er også grunnen til at koblingen mellom oppgave
+og endring er verdt å prioritere.
+
+### Terskelen for dem som ikke koder
+
+**Utfordringen.** Git-plattformer er fremmede for mange.
+
+**Retningen.** Legg noe oppå framfor å bytte ut – se avsnittet om verktøy. Det
+gjelder oppgavesiden like mye som innholdet: et brett kan brukes gjennom et
+enklere grensesnitt uten at kjernen endres.
+
+---
+
+Det gjenstår å prøve dette ut i praksis i SAMT-BU. Retningene over er hentet fra
+andre som har gjort det, ikke fra egne erfaringer ennå.

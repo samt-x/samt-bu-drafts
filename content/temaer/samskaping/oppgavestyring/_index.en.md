@@ -139,16 +139,33 @@ SAMT-BU uses GitHub, but equivalent solutions can be built elsewhere:
 For the public sector, the choice between hosted and self-hosted may matter for
 digital sovereignty. The way of working is the same either way.
 
-### Why not the usual project tools
+### The project tools
 
 Jira, Confluence, Planner and Notion are often better at distributing tasks
 taken on their own. But they are built for a single organisation: read access
 requires a licence, participation requires being added, and the content is hard
 to take with you.
 
-They therefore break the first three requirements above – and that is not a
-setting that can be changed. They are well suited to distributing work
-internally, and poorly suited as a shared surface in an ecosystem.
+**OpenProject shows that these three are not inseparable.** It is open source
+under GPL-3.0, can be self-hosted or run in an EU-based cloud, is explicitly
+aimed at public administration, and is used by the European Commission among
+others. It also meets WCAG 2.1, which is a point in its own right for the
+public sector. The licence requirement and the lock-in therefore fall away. It
+also integrates with both GitHub and GitLab, so that a task can be linked to
+the specific change that resolves it.
+
+What remains is the contribution model. **None of these tools has an equivalent
+to fork and pull request.** To contribute, you must be given an account by an
+administrator on that installation. That is an architectural difference, not a
+setting.
+
+The dividing line is therefore not between open and closed source, but between
+tools that assume participants have already been enrolled, and tools where a
+stranger can propose something without first becoming a member of anything.
+
+The project tools are consequently well suited to distributing work internally
+– and OpenProject is a genuine option for those who want that on open terms. As
+a shared surface in an ecosystem, they fall short.
 
 ### The threshold is solved by a layer on top, not by switching
 
@@ -165,13 +182,64 @@ That is probably the right path: keep an open and verifiable core, and lower
 the threshold with layers on top – rather than choosing a closed tool because
 it is easier to get started with.
 
-## What we do not yet know
+## Challenges – and where the solutions lie
 
-- Whether a combined board pulling items from several work areas – called a
-  Project in GitHub – gives enough overview in practice, or merely becomes
-  another surface nobody opens.
-- How much of the value lies in the tool, and how much lies in someone actually
-  keeping the overview up to date.
-- Whether the threshold for taking part is lowered or raised when work moves to
-  open surfaces. Openness gives visibility, but open tools are not necessarily
-  easy for everyone to adopt.
+None of these is a reason to refrain. They are things worth knowing about in
+advance, and for each of them there is a known direction.
+
+### One board quickly becomes another surface nobody opens
+
+**The challenge.** Gathering everything in one place can produce a list so long
+that it offers no overview, only a bad conscience.
+
+**The direction.** Separate two levels, as Altinn does – with GitHub as the
+tool at both:
+
+- **Portfolio level.** Few items, coarse resolution. Answers "how are the four
+  pilots doing".
+- **Project level.** Many items, fine resolution. Answers "what do I do next".
+
+The mistake is to mix them on one board. It then becomes too detailed for
+someone seeking an overview, and too coarse for someone doing the work. Two
+boards at different resolutions cover both needs, without the item having to
+exist in two places.
+
+### Notifications cannot be tailored
+
+**The challenge.** As described above: you follow a work area, not a label.
+
+**The direction.** Stop solving it with notifications. Notifications are *push*
+– they come to you, and can only be switched on or off. Overview is *pull* –
+you seek it out when you need it.
+
+A personal cross-cutting view – "what is assigned to me", "what has changed in
+what I follow" – covers most of the need without a single email. Such queries
+across work areas already exist in the tools.
+
+It is also reasonable to expect assistants to be a real help here: receiving
+"this has happened since last time that concerns you" as a summary, rather than
+twenty notifications to sort through yourself. Fine-grained notification
+control would then no longer determine whether you keep up.
+
+### Someone has to keep the overview up to date
+
+**The challenge.** A board that is wrong is worse than no board, because people
+trust it for a while before they stop.
+
+**The direction.** Derive status from the work rather than maintaining it. If
+an item closes by itself when the change it concerns is accepted, the board is
+up to date without anyone having done anything. That is also why the link
+between task and change is worth prioritising.
+
+### The threshold for those who do not code
+
+**The challenge.** Git platforms are alien to many.
+
+**The direction.** Add a layer rather than switching – see the section on
+tools. This applies to the task side as much as to the content: a board can be
+used through a simpler interface without the core changing.
+
+---
+
+All of this remains to be tried out in practice in SAMT-BU. The directions
+above are drawn from others who have done it, not yet from our own experience.
