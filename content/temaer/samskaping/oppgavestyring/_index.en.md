@@ -7,96 +7,102 @@ last_editor: Erik Hagen
 
 ---
 
-Draft, August 2026. Written as a basis for discussion, not as a recommendation.
+How should tasks be managed in a collaboration where several organisations take
+part, and none of them is superior to the others?
 
-## The situation today
+This is a discussion of what appears to be good practice, drawing on experience
+from SAMT-BU. A concrete proposal for this project can be found under
+[Suggestion: wider use of GitHub for task management](https://docs.samt-bu.no/en/utkast/diverse/github-oppgavestyring/).
 
-The project manages tasks in two places at once:
+Draft, August 2026.
 
-- **The core team uses MS Planner**, which is readily available in the
-  Microsoft environment participants use day to day.
-- **The pilots use GitHub issues** in a shared repository, `Oppgaver`, where
-  each item is labelled with the pilot it belongs to.
+## Tasks should sit where the work sits
 
-`Oppgaver` was created for pilot 1 in February 2026 and has since grown into
-the role of a shared backlog. In August 2026 it holds 62 items – 6 labelled
-pilot 1, 14 pilot 2 and 24 pilot 3. Pilot 4 has been given a label, but has not
-started using it.
+When a task and its result live in separate places, someone has to hold them
+together by hand. That is work nobody has been assigned, and it stops the week
+that person has other things to do.
 
-## The question
+When they live in the same place, a task can point to a specific change, and a
+change can close the task it answered. The trail then persists on its own,
+without anyone maintaining it.
 
-Would GitHub Projects have been a better choice than Planner – and if so, what
-is it that actually makes them better?
+This is not an argument for a particular tool. It is an argument for keeping the
+distance short between "what we are going to do" and "what we did".
 
-The argument is not that GitHub is a better task tool. Planner is probably
-easier for someone who does not code. The argument is that the tasks would then
-sit *in the same place as the work*: the documentation, the suggestions and the
-decisions. An item could point to a specific change, and a change could close
-an item.
+## Cross-cutting work needs a home that belongs to no one
 
-The counter-argument is just as real: the tool has to suit the people who will
-use it. A task system nobody opens is worthless, however well connected it is
-to everything else. This is not a question of which tool is best, but of where
-the threshold should sit – and for whom.
+In any collaboration between several parties there is always work that belongs
+to no single part: shared vocabulary, shared architecture, shared ways of
+working.
 
-## The split is stable, and that is precisely the problem
+Without a place of its own, such work ends up in one of three places. It is
+labelled with an arbitrarily chosen part of the project. It is placed with the
+most central party, where the others cannot see it. Or it is not written down.
 
-Parallel task systems are usually described as a temporary state – "for now we
-use both" – and are then never decided, merely left in place. The usual
-objection is that such arrangements decay: one system quietly wins, and the
-other is left holding old items nobody has closed, yet looking alive enough
-that people half trust them.
+All three are losses, but the last is the worst, because it leaves no trace.
 
-This split is of a different kind. It does not follow two competing tools, but
-an organisational boundary: the core team on one side, the pilots on the other.
-Splits like that do not decay. On the contrary, they are quite stable, precisely
+## Tool choices that follow the org chart entrench the org chart
+
+The usual warning against running two systems at once is that such arrangements
+decay: one quietly wins, and the other is left holding old items nobody has
+closed.
+
+But when the split follows an organisational boundary – one group here, another
+there – it does not decay. On the contrary, it is quite stable, precisely
 because the two groups rarely need each other's task list day to day.
 
-That is where the problem lies. A stable split along an organisational boundary
-recreates the very silo the project exists to break down. The risk is not that
-the arrangement stops working, but that it works – and that it renders the work
-on the other side invisible without anyone noticing. The pattern is worth
-recognising beyond this project too: **tool choices that follow the org chart
-entrench the org chart.**
+And that is where the problem lies. A stable split along an organisational
+boundary recreates the very silo the collaboration was meant to break down. The
+risk is not that the arrangement stops working, but that it works – and that it
+renders the work on the other side invisible without anyone noticing.
 
-## Shared backlog, or one per pilot?
+This does not mean everyone must use the same tool for everything. Distributing
+work internally within one organisation is a different matter from shared work.
+But the shared work should sit somewhere all participants actually look.
 
-The pilots have their own repositories for content, but share a backlog. That
-may look inconsistent, and at the same time it provides something valuable: you
-discover that several pilots are working on the same thing.
+## Two kinds of "shared" that are easily confused
 
-There is a distinction here that is easy to get wrong:
+When several parties are doing something similar, it is worth distinguishing two
+cases:
 
-- **The same task for several pilots** – one piece of work, several
-  beneficiaries. Shared vocabulary, overall architecture, methodology and ways
-  of working.
-- **The same type of task in each pilot** – parallel instances with their own
-  content. Risk and privacy assessments must be done per pilot: different data,
-  different legal bases, different risks. They cannot be merged.
+**The same task for several parties.** One piece of work, several who benefit
+from the result. A shared vocabulary is created once. Here shared ownership is
+right, and the task should be labelled as cross-cutting.
 
-The first type argues for a `Cross-cutting` label. The second argues for shared
-**templates**, not shared items – the reuse value lies in the checklist, not in
-the task.
+**The same type of task at each party.** Parallel tasks with their own content.
+A risk and privacy assessment must be carried out for each individual solution:
+different data, different legal bases, different risks. They cannot be merged.
 
-The price of a shared backlog is that notifications cannot be separated per
-pilot. GitHub has no subscription by label; you follow everything or nothing.
-This is the same distinction between *responsibility* and *interest* that
-applies elsewhere in the project, and here it cannot be solved with the current
-tools.
+Confusing the two leads either to duplicating work that should have been done
+once, or to merging assessments that had to be done separately.
 
-## Why this is a deliverable, not just housekeeping
+For the second case, the reuse value lies in the **template**, not in the task.
+A good checklist is worth more than a shared item.
 
-An ecosystem consists of actors that are not subordinate to one another. No one
-can impose a tool on the others, nor a way of working. The question of how
-shared work is coordinated without shared line management is therefore a
-general problem, not an internal detail – and the experience gained here is
-something others can use.
+## The price: notifications cannot be separated finely enough
 
-## Open questions
+Gathering everything in one place gives cross-cutting visibility – but removes
+the ability to follow only your own part. Today's tools separate by work area,
+not by label. You follow everything, or nothing.
 
-- Should tasks sit in the pilots' own repositories, with an organisation-level
-  project board pulling items from several repositories? That would give both a
-  local link between item and change, and a cross-cutting overview.
-- What does it take for a change of tool not to simply move the work to a place
-  where fewer people see it?
-- How should tasks that concern several pilots be labelled – and who owns them?
+That cuts across a distinction that matters a great deal in practice: the
+difference between **responsibility** – who must act – and **interest** – who
+wants to know. Responsibility is assigned and cannot be opted out of. Interest
+is self-chosen and should be easy to unsubscribe from.
+
+If the two are mixed, those responsible drown in noise, or those merely
+interested receive alerts they cannot switch off. People then switch everything
+off, and miss what they should have seen.
+
+This is a real cost of shared working surfaces, and it is worth knowing about in
+advance. It does not disappear by choosing a different tool.
+
+## What we do not yet know
+
+- Whether a combined board pulling items from several places gives enough
+  overview in practice, or merely becomes another surface nobody opens.
+- How much of the value lies in the tool, and how much lies in someone actually
+  keeping the overview up to date.
+- Whether the threshold for taking part is lowered or raised when work moves to
+  open surfaces. Openness gives visibility, but open tools are not necessarily
+  easy for everyone to adopt.

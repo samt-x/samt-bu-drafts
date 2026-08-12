@@ -7,96 +7,99 @@ last_editor: Erik Hagen
 
 ---
 
-Utkast, august 2026. Skrevet som grunnlag for diskusjon, ikke som anbefaling.
+Hvordan bør oppgaver styres i et samarbeid der flere organisasjoner deltar, og
+ingen av dem er overordnet de andre?
 
-## Situasjonen i dag
+Dette er en drøfting av hva som ser ut til å være god praksis, med erfaringene
+fra SAMT-BU som grunnlag. Et konkret forslag for dette prosjektet finnes under
+[Innspill om utvidet bruk av GitHub for oppgavestyring](https://docs.samt-bu.no/utkast/diverse/github-oppgavestyring/).
 
-Prosjektet styrer oppgaver to steder samtidig:
+Utkast, august 2026.
 
-- **Kjerneteamet bruker MS Planner**, som er lett tilgjengelig i det
-  Microsoft-miljøet deltakerne bruker til daglig.
-- **Pilotene bruker GitHub issues** i et felles repo, `Oppgaver`, der hver sak
-  merkes med hvilken pilot den hører til.
+## Oppgaver bør ligge der arbeidet ligger
 
-`Oppgaver` ble opprettet for pilot 1 i februar 2026 og har siden vokst inn i
-rollen som felles backlog. I august 2026 ligger det 62 saker der – 6 merket
-pilot 1, 14 pilot 2 og 24 pilot 3. Pilot 4 har fått en etikett, men ikke tatt
-den i bruk.
+Når en oppgave og resultatet av den ligger på hvert sitt sted, må noen holde
+dem sammen manuelt. Det er arbeid ingen er tildelt, og det stopper den uka
+vedkommende har annet å gjøre.
 
-## Spørsmålet
+Ligger de samme sted, kan en oppgave vise til en konkret endring, og en endring
+kan lukke oppgaven den svarte på. Sporet blir stående av seg selv, uten at noen
+vedlikeholder det.
 
-Ville GitHub-prosjekter vært et bedre valg enn Planner – og i så fall, hva er
-det egentlig som gjør dem bedre?
+Dette er ikke et argument for et bestemt verktøy. Det er et argument for at
+avstanden mellom «det vi skal gjøre» og «det vi gjorde» bør være kort.
 
-Argumentet er ikke at GitHub er et bedre oppgaveverktøy. Planner er
-sannsynligvis enklere for den som ikke koder. Argumentet er at oppgavene da
-ligger *samme sted som arbeidet*: dokumentasjonen, forslagene og
-beslutningene. En sak kan peke på en konkret endring, og en endring kan lukke
-en sak.
+## Tverrgående arbeid trenger et hjem som ikke tilhører noen
 
-Motargumentet er like reelt: verktøyet må passe dem som skal bruke det. Et
-oppgavesystem ingen åpner er verdiløst, uansett hvor godt det er koblet til
-resten. Dette er ikke et spørsmål om hvilket verktøy som er best, men om hvor
-terskelen skal ligge – og for hvem.
+I et samarbeid med flere parter finnes det alltid arbeid som ikke tilhører noen
+enkelt del: felles begreper, felles arkitektur, felles arbeidsform.
 
-## Delingen er stabil, og det er nettopp problemet
+Uten et eget sted havner slikt arbeid ett av tre steder. Det merkes med én
+tilfeldig valgt del av prosjektet. Det legges hos den mest sentrale parten, der
+de andre ikke ser det. Eller det blir ikke skrevet ned.
 
-Parallelle oppgavesystemer beskrives gjerne som en midlertidig tilstand –
-«foreløpig bruker vi begge» – og blir så aldri besluttet, bare værende. Den
-vanlige innvendingen er at slikt forfaller: ett system vinner stille, og det
-andre blir liggende med gamle saker ingen har lukket, men som ser levende nok
-ut til at folk halvveis stoler på dem.
+Alle tre er tap, men det siste er verst, fordi det ikke etterlater spor.
 
-Her er delingen av en annen type. Den følger ikke to konkurrerende verktøy,
-men en organisatorisk skillelinje: kjerneteamet på den ene siden, pilotene på
-den andre. Slike delinger forfaller ikke. De er tvert imot ganske stabile,
-nettopp fordi de to gruppene sjelden trenger hverandres oppgaveliste til
-daglig.
+## Verktøyvalg som følger organisasjonskartet, befester organisasjonskartet
 
-Det er der problemet ligger. En stabil deling langs en organisasjonsgrense
-gjenskaper den siloen prosjektet finnes for å bryte ned. Risikoen er ikke at
+Det vanlige rådet mot å bruke to systemer samtidig er at slikt forfaller: ett
+vinner stille, og det andre blir liggende med gamle saker ingen har lukket.
+
+Men når delingen følger en organisatorisk skillelinje – én gruppe her, en annen
+der – forfaller den ikke. Den er tvert imot ganske stabil, nettopp fordi de to
+gruppene sjelden trenger hverandres oppgaveliste til daglig.
+
+Og det er der problemet ligger. En stabil deling langs en organisasjonsgrense
+gjenskaper den siloen samarbeidet skulle bryte ned. Risikoen er ikke at
 ordningen slutter å virke, men at den virker – og at den gjør arbeidet på den
-andre siden usynlig uten at noen merker det. Mønsteret er verdt å kjenne igjen
-også utenfor dette prosjektet: **verktøyvalg som følger organisasjonskartet,
-befester organisasjonskartet.**
+andre siden usynlig uten at noen merker det.
 
-## Felles backlog eller én per pilot?
+Det betyr ikke at alle må bruke samme verktøy til alt. Intern
+oppgavefordeling i én organisasjon er noe annet enn felles arbeid. Men det
+felles arbeidet bør ligge et sted alle deltakerne faktisk ser.
 
-Pilotene har egne repoer for innhold, men deler backlog. Det kan se
-inkonsekvent ut, og gir samtidig noe verdifullt: man oppdager at flere piloter
-holder på med det samme.
+## To slags «felles» som er lette å blande
 
-Her ligger et skille som er lett å bomme på:
+Når flere parter gjør noe av det samme, er det verdt å skille mellom to
+tilfeller:
 
-- **Samme oppgave for flere piloter** – ett stykke arbeid, flere som har nytte
-  av det. Felles begrepsapparat, overordnet arkitektur, metodikk og
-  arbeidsform.
-- **Samme oppgavetype i hver pilot** – parallelle instanser med hvert sitt
-  innhold. ROS- og personvernvurderinger må gjøres per pilot: ulike
-  opplysninger, ulike hjemler, ulike risikoer. De kan ikke slås sammen.
+**Samme oppgave for flere.** Ett stykke arbeid, flere som har nytte av
+resultatet. Et felles begrepsapparat lages én gang. Her er delt eierskap
+riktig, og oppgaven bør merkes som tverrgående.
 
-Den første typen taler for en `Tverrgående`-etikett. Den andre taler for felles
-**maler**, ikke felles saker – gjenbruksverdien ligger i sjekklisten, ikke i
-oppgaven.
+**Samme oppgavetype hos hver.** Parallelle oppgaver med hvert sitt innhold. En
+risiko- og personvernvurdering må gjøres for hver enkelt løsning: ulike
+opplysninger, ulike hjemler, ulike risikoer. De kan ikke slås sammen.
 
-Prisen ved felles backlog er at varsling ikke lar seg skille per pilot. GitHub
-har ingen abonnering på etikett; man følger alt eller ingenting. Det er samme
-skille mellom *ansvar* og *interesse* som gjelder ellers i prosjektet, og her
-er det ikke løsbart med dagens verktøy.
+Blandes de to, ender man enten med å duplisere arbeid som burde vært gjort én
+gang, eller med å slå sammen vurderinger som måtte vært gjort hver for seg.
 
-## Hvorfor dette er en leveranse, ikke bare husholdning
+For det andre tilfellet ligger gjenbruksverdien i **malen**, ikke i oppgaven.
+En god sjekkliste er verdt mer enn en delt sak.
 
-Et økosystem består av aktører som ikke er underordnet hverandre. Da kan ingen
-pålegge de øvrige et verktøy, og heller ikke en arbeidsmåte. Spørsmålet om
-hvordan felles arbeid koordineres uten felles linjeledelse er derfor et
-generelt problem, ikke en intern detalj – og erfaringene herfra er noe andre
-kan bruke.
+## Prisen: varsling kan ikke skilles fint nok
 
-## Åpne spørsmål
+Samler man alt på ett sted, får man synlighet på tvers – men mister muligheten
+til å følge bare sin egen del. Verktøyene skiller i dag på arbeidsområde, ikke
+på merkelapp. Man følger alt, eller ingenting.
 
-- Bør oppgavene ligge i pilotenes egne repoer, med et prosjektbrett på
-  organisasjonsnivå som henter saker fra flere repoer? Da får man både lokal
-  kobling mellom sak og endring, og tverrgående utsyn.
-- Hva skal til for at et verktøyskifte ikke bare flytter arbeidet til et sted
-  der færre ser det?
-- Hvordan skal oppgaver som gjelder flere piloter merkes – og hvem eier dem?
+Det treffer et skille som betyr mye i praksis: forskjellen mellom **ansvar** –
+hvem må handle – og **interesse** – hvem vil vite. Ansvar tildeles og kan ikke
+velges bort. Interesse velges selv og skal være lett å melde seg av.
+
+Blandes de, drukner de ansvarlige i støy, eller de interesserte får varsler de
+ikke kan skru av. Da skrur folk av alt, og mister også det de burde fått med
+seg.
+
+Dette er en reell kostnad ved felles arbeidsflater, og den er verdt å kjenne
+til på forhånd. Den forsvinner ikke ved å velge et annet verktøy.
+
+## Det vi ikke vet ennå
+
+- Om et samlebrett som henter saker fra flere steder gir nok oversikt i praksis,
+  eller om det bare blir enda en flate ingen åpner.
+- Hvor mye av verdien som ligger i verktøyet, og hvor mye som ligger i at noen
+  faktisk holder oversikten ved like.
+- Om terskelen for å delta senkes eller heves når arbeidet flyttes til åpne
+  flater. Åpenhet gir innsyn, men åpne verktøy er ikke nødvendigvis enkle å ta
+  i bruk for alle.
