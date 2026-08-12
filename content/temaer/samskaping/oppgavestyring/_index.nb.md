@@ -177,6 +177,27 @@ internt – og OpenProject er et reelt alternativ for den som vil ha det på åp
 europeiske premisser. Som felles flate i et økosystem kommer de alle til kort,
 og det er ikke en innstilling som kan endres.
 
+### De to familiene i kombinasjon
+
+Familiene utelukker ikke hverandre, og det er trolig her den praktiske løsningen
+ligger.
+
+Et prosjektverktøy og en git-plattform kan settes sammen slik at hver gjør det
+den er god til: planlegging, framdrift og porteføljeoversikt i
+prosjektverktøyet – åpen deltakelse, forslag og historikk på git-plattformen.
+Koblingen mellom dem gjør at en oppgave viser status for den faktiske
+endringen, og lukkes når endringen er tatt inn.
+
+Den utenforstående trenger da ingen konto i prosjektverktøyet. Hun bidrar på
+den åpne flaten, og bidraget blir likevel synlig i planleggingen. Kravene
+familiene ikke oppfyller hver for seg, oppfylles av paret.
+
+Merk at SAMT-BU allerede har denne todelingen: Planner for kjerneteamets interne
+fordeling, GitHub for det åpne arbeidet. Forskjellen er at de to ikke er koblet
+sammen. Det er nettopp frakoblingen som gjør arbeidet på den andre siden
+usynlig, slik avsnittet om organisasjonskartet beskriver. En kobling ville ikke
+fjerne todelingen, men gjøre grensen gjennomtrengelig.
+
 ### Terskelen løses med et lag oppå, ikke ved å bytte ut
 
 Innvendingen mot git-plattformer er reell: de er laget for utviklere, og for

@@ -184,6 +184,28 @@ internally – and OpenProject is a genuine option for those who want that on
 open, European terms. As a shared surface in an ecosystem they all fall short,
 and that is not a setting that can be changed.
 
+### The two families in combination
+
+The families do not exclude one another, and this is probably where the
+practical solution lies.
+
+A project tool and a Git platform can be combined so that each does what it is
+good at: planning, progress and portfolio overview in the project tool – open
+participation, proposals and history on the Git platform. The link between them
+means a task shows the status of the actual change, and closes when the change
+is accepted.
+
+The outsider then needs no account in the project tool. They contribute on the
+open surface, and the contribution still becomes visible in the planning. The
+requirements neither family meets on its own are met by the pair.
+
+Note that SAMT-BU already has this division: Planner for the core team's
+internal distribution of work, GitHub for the open work. The difference is that
+the two are not connected. It is precisely that disconnection which renders the
+work on the other side invisible, as described in the section on the org chart.
+A connection would not remove the division, but would make the boundary
+permeable.
+
 ### The threshold is solved by a layer on top, not by switching
 
 The objection to Git platforms is real: they were built for developers, and to
