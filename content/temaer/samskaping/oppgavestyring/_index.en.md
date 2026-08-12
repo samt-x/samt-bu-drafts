@@ -120,7 +120,7 @@ countries, the tool must have some properties that cannot be taken for granted:
 - **Portable.** The content must be movable to another platform without being
   rewritten.
 
-### Git platforms
+### Git-based platforms
 
 Git-based platforms are currently the only family that has all five at once, in
 practical use and at scale. That is also why international standards work has
@@ -139,33 +139,50 @@ SAMT-BU uses GitHub, but equivalent solutions can be built elsewhere:
 For the public sector, the choice between hosted and self-hosted may matter for
 digital sovereignty. The way of working is the same either way.
 
-### The project tools
+### Traditional project tools
 
-Jira, Confluence, Planner and Notion are often better at distributing tasks
-taken on their own. But they are built for a single organisation: read access
-requires a licence, participation requires being added, and the content is hard
-to take with you.
+By traditional project tools we mean Jira, Confluence, Planner, Notion and the
+like. They manage *tasks about* the work – who does what, by when, and how far
+along it is. The work itself, meaning the document or the model or the code,
+sits somewhere else.
 
-**OpenProject shows that these three are not inseparable.** It is open source
-under GPL-3.0, can be self-hosted or run in an EU-based cloud, is explicitly
-aimed at public administration, and is used by the European Commission among
-others. It also meets WCAG 2.1, which is a point in its own right for the
-public sector. The licence requirement and the lock-in therefore fall away. It
-also integrates with both GitHub and GitLab, so that a task can be linked to
-the specific change that resolves it.
+That is no weakness in itself. Taken on their own, they are often better at
+distributing tasks than a Git platform is. But they are built for a single
+organisation, and that brings three limitations:
 
-What remains is the contribution model. **None of these tools has an equivalent
-to fork and pull request.** To contribute, you must be given an account by an
-administrator on that installation. That is an architectural difference, not a
-setting.
+1. Read access requires a licence.
+2. Participation requires an administrator to add you.
+3. The content is hard to take with you.
 
-The dividing line is therefore not between open and closed source, but between
-tools that assume participants have already been enrolled, and tools where a
-stranger can propose something without first becoming a member of anything.
+**OpenProject is an exception to the last two.** It is a web-based project
+management tool under GPL-3.0, developed in Germany and explicitly aimed at
+public administration. It can be self-hosted or run in an EU-based cloud, it
+meets WCAG 2.1, and it is used by the European Commission among others. If the
+licence is free and you run it yourself, both the licence requirement and the
+lock-in disappear.
 
-The project tools are consequently well suited to distributing work internally
-– and OpenProject is a genuine option for those who want that on open terms. As
-a shared surface in an ecosystem, they fall short.
+**But the limitation that matters most remains.** None of these tools has forks
+or pull requests – OpenProject included. To contribute, an administrator must
+create an account for you on that installation. An outsider cannot propose a
+change.
+
+The wording here is easy to be misled by. OpenProject has an *integration* with
+GitHub and GitLab, and it is a useful one: a pull request can be linked to a
+task, and the task can close by itself when the change is accepted. But the
+pull request is created and lives in GitHub or GitLab. OpenProject displays it.
+The tool's own documentation is explicit that repositories are not hosted
+there – you can read and download files, but need a Git client to change
+anything.
+
+The dividing line is therefore not between open and closed source. It runs
+between tools that assume participants have already been enrolled, and tools
+where a stranger can propose a specific change without first becoming a member
+of anything.
+
+Traditional project tools are consequently well suited to distributing work
+internally – and OpenProject is a genuine option for those who want that on
+open, European terms. As a shared surface in an ecosystem they all fall short,
+and that is not a setting that can be changed.
 
 ### The threshold is solved by a layer on top, not by switching
 

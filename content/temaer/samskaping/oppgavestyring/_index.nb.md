@@ -115,7 +115,7 @@ land, må verktøyet ha noen egenskaper som ikke er selvsagte:
 - **Mulig å flytte.** Innholdet må kunne tas med til en annen plattform uten å
   skrives om.
 
-### Git-plattformer
+### Git-baserte plattformer
 
 Git-baserte plattformer er i dag den eneste familien som har alle fem samtidig,
 i praktisk bruk og i stor skala. Det er også grunnen til at internasjonalt
@@ -134,32 +134,48 @@ SAMT-BU bruker GitHub, men tilsvarende løsninger kan realiseres andre steder:
 For offentlig sektor kan valget mellom driftet og selvdriftet ha betydning for
 digital suverenitet. Arbeidsformen er den samme uansett.
 
-### Prosjektverktøyene
+### Tradisjonelle prosjektverktøy
 
-Jira, Confluence, Planner og Notion er ofte bedre på oppgavefordeling isolert
-sett. Men de er bygget for én organisasjon: lesetilgang krever lisens,
-deltakelse krever å bli lagt til, og innholdet er tungt å ta med seg ut.
+Med tradisjonelle prosjektverktøy menes her Jira, Confluence, Planner, Notion
+og liknende. De styrer *oppgaver om* arbeidet – hvem gjør hva, når, og hvor
+langt man er kommet. Selve arbeidet, altså dokumentet eller modellen eller
+koden, ligger et annet sted.
 
-**OpenProject viser at disse tre ikke henger uløselig sammen.** Det er åpen
-kildekode under GPL-3.0, kan driftes i egen regi eller i EU-basert sky, retter
-seg uttrykkelig mot offentlig forvaltning, og brukes blant annet av
-Europakommisjonen. Det oppfyller også WCAG 2.1, som er et selvstendig poeng for
-offentlig sektor. Lisenskravet og innelåsingen faller dermed bort. I tillegg
-integrerer det mot både GitHub og GitLab, slik at en oppgave kan kobles til den
-konkrete endringen som løser den.
+Det er ingen svakhet i seg selv. Isolert sett er de ofte bedre på
+oppgavefordeling enn en git-plattform er. Men de er bygget for én organisasjon,
+og det gir tre begrensninger:
 
-Det som likevel gjenstår, er bidragsmodellen. **Ingen av disse verktøyene har
-en ekvivalent til fork og pull request.** For å bidra må du få en konto av en
-administrator på den installasjonen. Det er en arkitektonisk forskjell, ikke en
-innstilling.
+1. Lesetilgang krever lisens.
+2. Deltakelse krever at en administrator legger deg til.
+3. Innholdet er tungt å ta med seg ut.
 
-Skillet går altså ikke mellom åpen og lukket kildekode, men mellom verktøy som
-forutsetter at deltakerne allerede er innmeldt, og verktøy der en fremmed kan
-foreslå noe uten å bli medlem av noe først.
+**OpenProject er et unntak fra de to siste.** Det er et webbasert
+prosjektstyringsverktøy under GPL-3.0, utviklet i Tyskland og uttrykkelig
+rettet mot offentlig forvaltning. Det kan driftes i egen regi eller i EU-basert
+sky, det oppfyller WCAG 2.1, og det brukes blant annet av Europakommisjonen. Er
+lisensen fri og driften din egen, forsvinner både lisenskravet og
+innelåsingen.
 
-Prosjektverktøyene egner seg derfor godt til intern fordeling av arbeid – og
-OpenProject er et reelt alternativ for den som vil ha det på åpne premisser.
-Som felles flate i et økosystem kommer de til kort.
+**Men begrensningen som betyr mest, står igjen.** Ingen av disse verktøyene har
+fork eller pull request – heller ikke OpenProject. For å bidra må en
+administrator opprette en konto til deg på den installasjonen. En utenforstående
+kan ikke foreslå en endring.
+
+Her er det lett å bli villedet av ordbruken. OpenProject har en *integrasjon*
+mot GitHub og GitLab, og den er nyttig: en pull request kan kobles til en
+oppgave, og oppgaven kan lukkes av seg selv når endringen tas inn. Men pull
+requesten opprettes og lever i GitHub eller GitLab. OpenProject viser den.
+Verktøyets egen dokumentasjon er tydelig på at repoene ikke driftes der – man
+kan lese og laste ned filer, men må bruke en git-klient for å endre noe.
+
+Skillet går altså ikke mellom åpen og lukket kildekode. Det går mellom verktøy
+som forutsetter at deltakerne allerede er innmeldt, og verktøy der en fremmed
+kan foreslå en konkret endring uten å bli medlem av noe først.
+
+Tradisjonelle prosjektverktøy egner seg derfor godt til å fordele arbeid
+internt – og OpenProject er et reelt alternativ for den som vil ha det på åpne,
+europeiske premisser. Som felles flate i et økosystem kommer de alle til kort,
+og det er ikke en innstilling som kan endres.
 
 ### Terskelen løses med et lag oppå, ikke ved å bytte ut
 
