@@ -125,7 +125,9 @@ arbeidsområder på GitHub, der hvem som helst kan kommentere.
 SAMT-BU bruker GitHub, men tilsvarende løsninger kan realiseres andre steder:
 
 - **GitLab** – samme modell, og kan driftes i egen regi. EU-kommisjonen driver
-  sin egen GitLab-tjeneste for åpen kildekode.
+  [code.europa.eu](https://code.europa.eu/) på GitLab, forvaltet av deres Open
+  Source Programme Office og åpent for EU-institusjoner, utviklere og
+  samarbeidende organisasjoner.
 - **Forgejo og Gitea** – lettere alternativer beregnet på egen drift. Codeberg
   er en europeisk, ideell tjeneste bygget på Forgejo.
 

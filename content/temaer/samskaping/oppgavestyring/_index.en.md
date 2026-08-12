@@ -130,7 +130,9 @@ where anyone can comment.
 SAMT-BU uses GitHub, but equivalent solutions can be built elsewhere:
 
 - **GitLab** – the same model, and can be self-hosted. The European Commission
-  runs its own GitLab service for open source.
+  runs [code.europa.eu](https://code.europa.eu/) on GitLab, managed by its Open
+  Source Programme Office and open to EU institutions, developers and partner
+  organisations.
 - **Forgejo and Gitea** – lighter alternatives intended for self-hosting.
   Codeberg is a European non-profit service built on Forgejo.
 
