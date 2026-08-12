@@ -71,6 +71,22 @@ it concerns, and gain the overview as well.
 None of this requires new software or new licences. The GitHub accounts already
 exist, and all participants have access.
 
+## The relationship to Planner over time
+
+The project already has a two-part division: Planner for the core team's
+internal distribution of work, GitHub for the open work. The two are not
+connected, and that is part of why the work on one side is barely visible from
+the other.
+
+This proposal does not change that. It is about giving cross-cutting work
+somewhere to live, not about touching Planner.
+
+Should Planner's role be reconsidered later – for reasons of licensing,
+accessibility or digital sovereignty – there are project tools that connect to
+GitHub, so that a task shows the status of the actual change. OpenProject is
+one such tool, open source and widely used in public administration. But that
+is a separate question, and should be handled on its own.
+
 ## Questions for discussion
 
 - Is it correct that cross-cutting tasks have no home today – or do they exist

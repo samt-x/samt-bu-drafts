@@ -71,6 +71,22 @@ arbeidet den gjelder, og får utsynet i tillegg.
 Ingen av delene krever ny programvare eller nye lisenser. GitHub-kontoene
 finnes allerede, og alle deltakere har tilgang.
 
+## Forholdet til Planner på sikt
+
+Prosjektet har allerede en todeling: Planner for kjerneteamets interne
+fordeling, GitHub for det åpne arbeidet. De to er ikke koblet sammen, og det er
+en del av grunnen til at arbeidet på den ene siden er lite synlig fra den
+andre.
+
+Dette forslaget endrer ikke på det. Det handler om å gi det tverrgående
+arbeidet et sted å være, ikke om å røre Planner.
+
+Skulle Planners rolle bli tatt opp senere – av hensyn til lisenser, universell
+utforming eller digital suverenitet – finnes det prosjektverktøy som kobler seg
+mot GitHub, slik at en oppgave viser status for den faktiske endringen.
+OpenProject er ett slikt, med åpen kildekode og utbredt bruk i offentlig
+forvaltning. Men det er et eget spørsmål, og bør behandles for seg.
+
 ## Spørsmål til diskusjon
 
 - Stemmer det at tverrgående oppgaver mangler et sted i dag – eller finnes de

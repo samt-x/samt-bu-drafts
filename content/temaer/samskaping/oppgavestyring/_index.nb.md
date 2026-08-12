@@ -192,11 +192,10 @@ Den utenforstående trenger da ingen konto i prosjektverktøyet. Hun bidrar på
 den åpne flaten, og bidraget blir likevel synlig i planleggingen. Kravene
 familiene ikke oppfyller hver for seg, oppfylles av paret.
 
-Merk at SAMT-BU allerede har denne todelingen: Planner for kjerneteamets interne
-fordeling, GitHub for det åpne arbeidet. Forskjellen er at de to ikke er koblet
-sammen. Det er nettopp frakoblingen som gjør arbeidet på den andre siden
-usynlig, slik avsnittet om organisasjonskartet beskriver. En kobling ville ikke
-fjerne todelingen, men gjøre grensen gjennomtrengelig.
+Det avgjørende er ikke om arbeidet er delt på to verktøy, men om de to er
+koblet. En todeling uten kobling er nettopp det som gjør arbeidet på den andre
+siden usynlig, slik avsnittet om organisasjonskartet beskriver. Koblingen
+fjerner ikke todelingen, men gjør grensen gjennomtrengelig.
 
 ### Terskelen løses med et lag oppå, ikke ved å bytte ut
 

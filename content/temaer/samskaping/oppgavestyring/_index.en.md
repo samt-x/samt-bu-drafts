@@ -199,12 +199,10 @@ The outsider then needs no account in the project tool. They contribute on the
 open surface, and the contribution still becomes visible in the planning. The
 requirements neither family meets on its own are met by the pair.
 
-Note that SAMT-BU already has this division: Planner for the core team's
-internal distribution of work, GitHub for the open work. The difference is that
-the two are not connected. It is precisely that disconnection which renders the
+What matters is not whether the work is split across two tools, but whether the
+two are connected. A split without a connection is precisely what renders the
 work on the other side invisible, as described in the section on the org chart.
-A connection would not remove the division, but would make the boundary
-permeable.
+The connection does not remove the split, but makes the boundary permeable.
 
 ### The threshold is solved by a layer on top, not by switching
 
