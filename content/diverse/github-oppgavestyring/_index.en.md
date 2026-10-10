@@ -44,7 +44,7 @@ The core team uses Planner.
 Between these two lies a third category that has no natural home today:
 
 - shared vocabulary
-- overall architecture that several pilots build on
+- high-level architecture that several pilots build on
 - methodology and ways of working
 - preparations for gatherings, such as the August workshop
 - clarifications that concern everyone, such as access management and roles
