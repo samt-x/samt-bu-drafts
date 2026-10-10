@@ -10,7 +10,7 @@ last_editor: Erik Hagen
 
 Innspill, august 2026.
 
-> **Oppdatering oktober 2026:** Oppgavestyringen er nå lagt om og dokumentert som en egen løsning under [Styringsløsninger → Oppgavestyring](/prosjektleveranser/loesninger/styringsloesninger/oppgavestyring/). Innspillet under står som det ble skrevet.
+> **Oppdatering oktober 2026:** Oppgavestyringen er nå lagt om og dokumentert som en egen løsning under [Samhandlingsplattform → Oppgavestyring](/prosjektleveranser/loesninger/samhandlingsplattform/oppgavestyring/). Innspillet under står som det ble skrevet.
 
 ## Forslaget kort
 
