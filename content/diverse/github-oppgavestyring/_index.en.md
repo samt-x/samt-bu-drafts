@@ -10,6 +10,8 @@ last_editor: Erik Hagen
 
 Contribution, August 2026.
 
+> **Update October 2026:** Task management has since been reorganised and is documented as a separate solution under [Governance solutions → Task management](/en/prosjektleveranser/loesninger/styringsloesninger/oppgavestyring/). The contribution below stands as originally written.
+
 ## The proposal in brief
 
 The project should adopt **GitHub Projects** for cross-cutting work – in the

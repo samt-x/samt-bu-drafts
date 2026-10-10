@@ -10,6 +10,8 @@ last_editor: Erik Hagen
 
 Innspill, august 2026.
 
+> **Oppdatering oktober 2026:** Oppgavestyringen er nå lagt om og dokumentert som en egen løsning under [Styringsløsninger → Oppgavestyring](/prosjektleveranser/loesninger/styringsloesninger/oppgavestyring/). Innspillet under står som det ble skrevet.
+
 ## Forslaget kort
 
 Prosjektet bør ta i bruk **GitHub Projects** for tverrgående arbeid – på samme
