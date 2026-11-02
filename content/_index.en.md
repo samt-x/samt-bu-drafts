@@ -8,5 +8,10 @@ lastmod: 2026-03-28T10:12:28+01:00
 last_editor: Erik Hagen
 
 ---
+Drafts and inputs for content on the website in general – professional proposals, corrections and new chapters.
 
-Inputs and drafts for the SAMT-BU project.
+*Do you have input to the market dialogue? That belongs under [Submissions and dialogues](/en/ekstern-markedsdialog/innspill-og-dialoger/).*
+
+<!-- markør B2 -->
+
+<!-- markør D -->
