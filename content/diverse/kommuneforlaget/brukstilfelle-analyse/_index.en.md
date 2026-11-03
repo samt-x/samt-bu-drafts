@@ -4,7 +4,7 @@ id: df6ebc64-e1d4-4fd7-a190-9f077eb085d2
 title: "KF's analysis of use cases 1–19 in Digdir's Felles løft / SAMT-BU"
 linkTitle: "Use case analysis"
 weight: 10
-lastmod: 2026-06-29T02:04:41+02:00
+lastmod: 2026-11-03T01:34:48+01:00
 last_editor: Erik Hagen
 
 ---
