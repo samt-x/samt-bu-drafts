@@ -4,7 +4,7 @@ id: 39286298-056f-4d68-9fe0-cdea507f59cb
 title: "Data-centric service development"
 linkTitle: "Data-centric service development"
 weight: 10
-lastmod: 2026-11-02T21:32:08+01:00
+lastmod: 2026-11-18T21:09:14+01:00
 last_editor: Erik Hagen
 
 ---
