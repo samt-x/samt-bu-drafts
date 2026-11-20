@@ -19,7 +19,7 @@ Project «Felles løft: Seamless services for children and young people (the SAM
 
 Support: NOK 34 246 800.
 
-The project is to establish a shared foundation for collaboration and knowledge about data-driven service development and seamless user journeys across levels of government and sectors, with piloting based on the area of children and young people – from kindergarten to higher education.
+The project is to establish a shared foundation for collaboration and knowledge about data-centric service development and seamless user journeys across administrative levels and sectors, with piloting based on the area of children and young people – from kindergarten to higher education.
 
 Below is the list of identified use cases in accordance with the template used in the work on the national architecture for children and young people and the standards of the Norwegian Directorate for Education and Training (Udir).
 

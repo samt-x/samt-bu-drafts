@@ -19,7 +19,7 @@ Prosjekt «Felles løft: Sammenhengende tjenester for barn og unge (SAMT-BU-pros
 
 Støtte: kr 34 246 800.
 
-Prosjektet skal etablere et felles fundament for samarbeid og kunnskap om datadrevet tjenesteutvikling og sømløse brukerreiser på tvers av forvaltningsnivåer og sektorer, med pilotering ut fra området barn og unge – fra barnehage til høyere utdanning.
+Prosjektet skal etablere et felles fundament for samarbeid og kunnskap om datasentrisk tjenesteutvikling og sømløse brukerreiser på tvers av forvaltningsnivåer og sektorer, med pilotering ut fra området barn og unge – fra barnehage til høyere utdanning.
 
 Nedenfor er listen med identifiserte brukstilfeller i henhold til mal brukt i arbeidet med nasjonal arkitektur for barn og unge og standarder hos Utdanningsdirektoratet (Udir).
 
