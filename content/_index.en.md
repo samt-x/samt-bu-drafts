@@ -4,7 +4,7 @@ id: 24122ffb-fd3c-45b1-9cce-524b25b32fa4
 title: "Drafts and input"
 linkTitle: "Drafts and input"
 weight: 90
-lastmod: 2026-11-02T21:32:08+01:00
+lastmod: 2026-11-20T02:42:12+01:00
 last_editor: Erik Hagen
 
 ---
