@@ -1,5 +1,5 @@
 ---
-# id: auto-generert – kopierte verdier overskrives automatisk ved push
+# id: auto-generated – copied values are overwritten automatically on push
 id: 877876e9-0061-45f8-aa7f-a8ee44f65212
 title: "Miscellaneous"
 linkTitle: "Miscellaneous"
@@ -9,4 +9,4 @@ last_editor: Erik Hagen
 
 ---
 
-*English content coming soon. See the Norwegian version for full details.*
+Input and drafts from various actors and contexts, listed chronologically.

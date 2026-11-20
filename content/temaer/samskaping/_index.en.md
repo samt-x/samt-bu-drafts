@@ -18,5 +18,5 @@ This material has two possible destinations, and they should be kept apart:
 - **The instructions** – how to contribute to this site in practice – belong
   under [How to contribute](https://docs.samt-bu.no/en/hvordan-bidra/).
 
-If the two are mixed, the theme ends up as a user manual rather than as
+If the two are mixed, the topic ends up as a user manual rather than as
 experience others can apply.

@@ -7,4 +7,4 @@ last_editor: Erik Hagen
 
 ---
 
-Here, input and drafts for target architecture are provided, as candidates for inclusion under [https://docs.samt-bu.no/en/arkitektur/.](https://docs.samt-bu.no/en/arkitektur/)
+This is where input and drafts for the target architecture are collected, as candidates for inclusion under [https://docs.samt-bu.no/en/arkitektur/](https://docs.samt-bu.no/en/arkitektur/).
