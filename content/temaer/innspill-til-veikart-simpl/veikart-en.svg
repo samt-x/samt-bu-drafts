@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" width="1000" height="760" font-family="Arial, Helvetica, sans-serif">
+  <title>Input to a roadmap: Simpl in Norwegian digital infrastructure (draft)</title>
+  <rect x="0" y="0" width="1000" height="760" fill="#ffffff"/>
+
+  <!-- Rings: distance to the goal -->
+  <g fill="none" stroke="#1f5f8b" stroke-width="2">
+    <path d="M 760 40 A 200 200 0 0 0 960 240"/>
+    <path d="M 560 40 A 400 400 0 0 0 960 440"/>
+    <path d="M 360 40 A 600 600 0 0 0 960 640"/>
+  </g>
+
+  <!-- Tracks: lines out from the goal -->
+  <g stroke="#1f5f8b" stroke-width="1.5">
+    <line x1="960" y1="40" x2="240" y2="40"/>
+    <line x1="960" y1="40" x2="275" y2="263"/>
+    <line x1="960" y1="40" x2="378" y2="463"/>
+    <line x1="960" y1="40" x2="537" y2="623"/>
+    <line x1="960" y1="40" x2="738" y2="725"/>
+    <line x1="960" y1="40" x2="960" y2="760"/>
+  </g>
+
+  <!-- Ring names -->
+  <g font-size="14" fill="#1f5f8b" text-anchor="middle" font-weight="bold">
+    <text x="810" y="26">Adopt (2029–30)</text>
+    <text x="660" y="26">Pilot (2027–28)</text>
+    <text x="460" y="26">Explore (2026–27)</text>
+  </g>
+
+  <!-- Track names -->
+  <g font-size="15" fill="#24292f" text-anchor="middle" font-weight="bold">
+    <text x="303" y="138">Identity</text><text x="303" y="156">and trust</text>
+    <text x="368" y="336">Access and</text><text x="368" y="354">terms of use</text>
+    <text x="490" y="504">Data and</text><text x="490" y="522">descriptions</text>
+    <text x="640" y="626">Data sharing and</text><text x="640" y="644">data spaces</text>
+    <text x="856" y="691">AI and</text><text x="856" y="709">sandboxes</text>
+  </g>
+
+  <!-- Simpl-Labs tests across the tracks -->
+  <g stroke="#c0392b" stroke-width="1.5" stroke-dasharray="6 5" fill="none">
+    <line x1="700" y1="470" x2="490" y2="128"/>
+    <line x1="690" y1="480" x2="540" y2="270"/>
+    <line x1="680" y1="490" x2="610" y2="400"/>
+    <line x1="790" y1="500" x2="870" y2="530"/>
+  </g>
+
+  <!-- Other initiatives (examples) -->
+  <g font-size="13" fill="#24292f" text-anchor="middle">
+    <circle cx="490" cy="118" r="6" fill="#1f5f8b"/><text x="490" y="104">EU wallet and credentials</text>
+    <circle cx="540" cy="262" r="6" fill="#1f5f8b"/><text x="540" y="248">Altinn Authorisation</text>
+    <circle cx="612" cy="392" r="6" fill="#1f5f8b"/><text x="612" y="378">data.norge.no</text>
+    <circle cx="880" cy="534" r="6" fill="#1f5f8b"/><text x="880" y="556">AI sandbox</text>
+  </g>
+
+  <!-- Simpl -->
+  <ellipse cx="733" cy="486" rx="72" ry="28" fill="#fdecea" stroke="#c0392b" stroke-width="2.5"/>
+  <text x="733" y="491" font-size="17" font-weight="bold" fill="#c0392b" text-anchor="middle">Simpl-Labs</text>
+  <ellipse cx="824" cy="300" rx="78" ry="22" fill="#fdecea" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="824" y="305" font-size="14" fill="#c0392b" text-anchor="middle">Simpl-Live experience</text>
+
+  <!-- The goal -->
+  <circle cx="960" cy="40" r="80" fill="#1f5f8b"/>
+  <text x="925" y="82" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle">Goal</text>
+
+  <!-- Legend -->
+  <g font-size="14" fill="#24292f">
+    <rect x="12" y="520" width="300" height="226" rx="6" fill="#f6f8fa" stroke="#d0d7de"/>
+    <text x="24" y="544" font-weight="bold">Goal (proposal)</text>
+    <text x="24" y="564">Connected, trust-based shared</text>
+    <text x="24" y="582">digital infrastructure that works</text>
+    <text x="24" y="600">together with Europe</text>
+    <text x="24" y="630" font-weight="bold">How to read the figure</text>
+    <text x="24" y="650">Rings: distance to the goal</text>
+    <text x="24" y="668">Lines: tracks (themes)</text>
+    <line x1="24" y1="688" x2="60" y2="688" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <text x="68" y="693">Simpl-Labs tests across</text>
+    <text x="24" y="724" font-style="italic" fill="#57606a">Draft. Goal, tracks, years are proposals.</text>
+  </g>
+</svg>

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" width="1000" height="760" font-family="Arial, Helvetica, sans-serif">
+  <title>Innspill til veikart: Simpl i norsk digital infrastruktur (utkast)</title>
+  <rect x="0" y="0" width="1000" height="760" fill="#ffffff"/>
+
+  <!-- Ringer: avstand til målet -->
+  <g fill="none" stroke="#1f5f8b" stroke-width="2">
+    <path d="M 760 40 A 200 200 0 0 0 960 240"/>
+    <path d="M 560 40 A 400 400 0 0 0 960 440"/>
+    <path d="M 360 40 A 600 600 0 0 0 960 640"/>
+  </g>
+
+  <!-- Spor: linjer ut fra målet -->
+  <g stroke="#1f5f8b" stroke-width="1.5">
+    <line x1="960" y1="40" x2="240" y2="40"/>
+    <line x1="960" y1="40" x2="275" y2="263"/>
+    <line x1="960" y1="40" x2="378" y2="463"/>
+    <line x1="960" y1="40" x2="537" y2="623"/>
+    <line x1="960" y1="40" x2="738" y2="725"/>
+    <line x1="960" y1="40" x2="960" y2="760"/>
+  </g>
+
+  <!-- Ringnavn -->
+  <g font-size="14" fill="#1f5f8b" text-anchor="middle" font-weight="bold">
+    <text x="810" y="26">Ta i bruk (2029–30)</text>
+    <text x="660" y="26">Prøve ut (2027–28)</text>
+    <text x="460" y="26">Utforske (2026–27)</text>
+  </g>
+
+  <!-- Spornavn -->
+  <g font-size="15" fill="#24292f" text-anchor="middle" font-weight="bold">
+    <text x="303" y="138">Identitet</text><text x="303" y="156">og tillit</text>
+    <text x="368" y="336">Tilgang og</text><text x="368" y="354">bruksvilkår</text>
+    <text x="490" y="504">Data og</text><text x="490" y="522">beskrivelser</text>
+    <text x="640" y="626">Datadeling og</text><text x="640" y="644">data spaces</text>
+    <text x="856" y="691">KI og</text><text x="856" y="709">sandkasser</text>
+  </g>
+
+  <!-- Simpl-Labs tester på tvers av sporene -->
+  <g stroke="#c0392b" stroke-width="1.5" stroke-dasharray="6 5" fill="none">
+    <line x1="700" y1="470" x2="490" y2="128"/>
+    <line x1="690" y1="480" x2="540" y2="270"/>
+    <line x1="680" y1="490" x2="610" y2="400"/>
+    <line x1="790" y1="500" x2="870" y2="530"/>
+  </g>
+
+  <!-- Andre initiativer (eksempler) -->
+  <g font-size="13" fill="#24292f" text-anchor="middle">
+    <circle cx="490" cy="118" r="6" fill="#1f5f8b"/><text x="490" y="104">EU-lommebok og attester</text>
+    <circle cx="540" cy="262" r="6" fill="#1f5f8b"/><text x="540" y="248">Altinn Autorisasjon</text>
+    <circle cx="612" cy="392" r="6" fill="#1f5f8b"/><text x="612" y="378">data.norge.no</text>
+    <circle cx="880" cy="534" r="6" fill="#1f5f8b"/><text x="880" y="556">KI-sandkassen</text>
+  </g>
+
+  <!-- Simpl -->
+  <ellipse cx="733" cy="486" rx="72" ry="28" fill="#fdecea" stroke="#c0392b" stroke-width="2.5"/>
+  <text x="733" y="491" font-size="17" font-weight="bold" fill="#c0392b" text-anchor="middle">Simpl-Labs</text>
+  <ellipse cx="824" cy="300" rx="70" ry="22" fill="#fdecea" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="824" y="305" font-size="14" fill="#c0392b" text-anchor="middle">Simpl-Live-erfaringer</text>
+
+  <!-- Målet -->
+  <circle cx="960" cy="40" r="80" fill="#1f5f8b"/>
+  <text x="925" y="82" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle">Mål</text>
+
+  <!-- Forklaring -->
+  <g font-size="14" fill="#24292f">
+    <rect x="12" y="520" width="300" height="226" rx="6" fill="#f6f8fa" stroke="#d0d7de"/>
+    <text x="24" y="544" font-weight="bold">Mål (forslag)</text>
+    <text x="24" y="564">Sammenhengende og tillitsbasert</text>
+    <text x="24" y="582">digital fellesinfrastruktur som</text>
+    <text x="24" y="600">fungerer sammen med Europa</text>
+    <text x="24" y="630" font-weight="bold">Slik leses figuren</text>
+    <text x="24" y="650">Ringene: avstand til målet</text>
+    <text x="24" y="668">Linjene: spor (tema)</text>
+    <line x1="24" y1="688" x2="60" y2="688" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <text x="68" y="693">Simpl-Labs tester på tvers</text>
+    <text x="24" y="724" font-style="italic" fill="#57606a">Utkast. Mål, spor og år er forslag.</text>
+  </g>
+</svg>
