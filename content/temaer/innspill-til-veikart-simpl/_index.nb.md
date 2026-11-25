@@ -4,6 +4,8 @@ title: "Innspill til veikart: Simpl i norsk digital infrastruktur"
 linkTitle: "Innspill til veikart (Simpl)"
 weight: 40
 status: Tidlig utkast
+lastmod: 2026-11-25T01:47:26+01:00
+last_editor: Erik Hagen
 
 ---
 *Hvor hører Simpl og testmiljøet Simpl-Labs hjemme i et veikart for norsk digital infrastruktur? Utkastet er et innspill til diskusjon. Målet, sporene og årstallene er forslag, ikke vedtatte planer.*
