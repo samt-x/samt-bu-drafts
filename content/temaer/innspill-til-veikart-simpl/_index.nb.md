@@ -1,4 +1,5 @@
 ---
+id: a713f8d0-925f-4ea0-abef-7c9139465cee
 title: "Innspill til veikart: Simpl i norsk digital infrastruktur"
 linkTitle: "Innspill til veikart (Simpl)"
 weight: 40

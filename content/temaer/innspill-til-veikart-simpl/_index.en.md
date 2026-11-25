@@ -1,4 +1,5 @@
 ---
+id: a713f8d0-925f-4ea0-abef-7c9139465cee
 title: "Input to a roadmap: Simpl in Norwegian digital infrastructure"
 linkTitle: "Input to a roadmap (Simpl)"
 weight: 40
