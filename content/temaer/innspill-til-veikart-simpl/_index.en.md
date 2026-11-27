@@ -30,8 +30,6 @@ The goal has not been decided. Three levels to choose from:
 | Middle (proposal) | Connected, trust-based shared digital infrastructure that works together with Europe | Covers interoperability, trust and European cooperation without locking into one technology |
 | Focused | Trust-based data sharing across sectors and countries, also as a basis for artificial intelligence (AI) | Suitable if data and AI are to be at the centre |
 
-Other countries phrase similar goals. Nepal, for example, has the goal "Modern, dynamic, secure and interoperable digital government".
-
 ---
 
 ## Proposed tracks

@@ -30,8 +30,6 @@ Målet er ikke bestemt. Tre nivåer å velge mellom:
 | Midt (forslag) | Sammenhengende og tillitsbasert digital fellesinfrastruktur som fungerer sammen med Europa | Dekker samvirke, tillit og europeisk samarbeid uten å låse seg til én teknologi |
 | Spisset | Tillitsbasert datadeling på tvers av sektorer og land, også som grunnlag for kunstig intelligens (KI) | Passer hvis data og KI skal stå i sentrum |
 
-Andre land formulerer lignende mål. Nepal har for eksempel målet «Modern, dynamic, secure and interoperable digital government».
-
 ---
 
 ## Forslag til spor
