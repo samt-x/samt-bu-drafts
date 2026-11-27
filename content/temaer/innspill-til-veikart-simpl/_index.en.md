@@ -4,7 +4,7 @@ title: "Input to a roadmap: Simpl in Norwegian digital infrastructure"
 linkTitle: "Input to a roadmap (Simpl)"
 weight: 40
 status: Early draft
-lastmod: 2026-11-25T01:47:26+01:00
+lastmod: 2026-11-28T00:38:44+01:00
 last_editor: Erik Hagen
 
 ---
